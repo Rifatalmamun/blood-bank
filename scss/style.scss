@@ -1,0 +1,3170 @@
+/*.......................................Project Information..................................
+Project: Blood Bank website
+Client: hidden
+Start date: 19/09/19
+End date: 
+Developer: Rifat al mamun
+--------------------------------------------------------------------------------------------*/
+
+//.......................................Color Variable..................................
+//---------------------------------------------------------------------------------------
+
+$primary_color: #B22626; 
+//$primary_color: #8a0303;
+$text_color: #29415F;
+$title_color: #29415F;
+$title_icon_color: #B22626;
+$subtitle_color: rgb(96, 112, 131);
+
+
+//.......................................My own class....................................
+//---------------------------------------------------------------------------------------
+
+
+
+//.......................................Basic task......................................
+//---------------------------------------------------------------------------------------
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Merriweather', serif;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    width: 100%;
+   
+}
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: $title_color;
+    
+    i{
+        font-size: 40px;
+        color: $title_icon_color;
+    }
+    
+}
+.sub_title{
+    text-align: center;
+    color: $subtitle_color;
+    margin-top: -15px;
+}
+
+//.......................................Section style start from here......................................
+//----------------------------------------------------------------------------------------------------------
+
+
+/*...................................................................................................................*/
+/*.................................................INDEX PAGE...................................................*/
+
+/*.................................................................................................*/
+/*............................................First_section........................................*/
+
+.First_section{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 40px;
+background: rgb(66,6,10);
+background: linear-gradient(0deg, rgba(66,6,10,1) 0%, rgba(164,8,38,1) 100%, rgba(19,1,3,1) 100%);
+
+    .logo_box{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        img{
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+        }   
+        i{
+            font-size: 100px;
+            color: #ddd; 
+        }
+        h4{
+            font-size: 14px;
+            font-style: italic ;
+            color: rgb(255, 255, 255);                
+        }
+    }
+    .contact_box{
+        width: 80%;
+        margin-left: 20%;
+        height: 80%;
+        margin-top: 5%;
+        img{
+            width: 45px;
+            height: 25px;
+            margin: 0 10px;
+        }
+        p{
+           color: rgb(255, 255, 255);
+           font-size: 16px;
+           font-style: bold;
+        }
+    }
+    .third_part{
+        .globe{
+            color: #fff;
+            position: absolute;
+            left: -200px;
+            top: 100px;
+            font-size: 50px;
+            color: #ddd;
+        }
+        a{
+            i{
+                padding: 0;
+                margin: 0;
+                margin-right: 10px;
+            }
+            background: rgb(143, 4, 27); 
+            background: #9e0606;
+
+            padding:5px 30px;  
+            color: #ffffff;
+            border-radius: 30px;
+            margin-bottom: 18px;
+            font-size: 20px;
+        }
+        .hide{
+            display: none;
+        }
+        p{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+        }
+    }
+nav{
+    .web_name{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        text-decoration: none;
+        font-size: 16px;
+        top:20px;
+        left: 70px;
+    }
+    .first_nav_item{
+       
+        background:rgb(255, 255, 255);
+       //background: transparent;
+        border-radius: 30px;
+        border-right: 1px solid #fff;
+        padding: 0 50px;
+        //background: #fff;
+        
+        li{
+            padding: 5px 15px;
+            &:focus{
+                border: none;
+            }
+         a{
+             i{
+                 font-size: 15px;;
+             }
+             position: relative;
+             color: rgb(150, 8, 8);
+             //color: #fff;
+             &:focus{
+                 border: none;
+             }
+         }
+         &:hover{
+             a{
+                 color: rgb(247, 14, 14);
+             }
+         }
+        }
+        .sinsm{
+            display: none;
+        }
+    }
+    .second_nav_item{
+        background: #ffffff;
+        border-radius: 30px;
+        padding: 0 20px;
+        li a{
+            color: rgb(150, 8, 8);
+        }
+    }
+ }
+}
+
+/*.................................................................................................*/
+/*SECOND SECTION START HERE.........................................................................*/
+
+#Second_section{
+    font-family: 'Merriweather', serif;
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(rgba(248, 248, 248, 0.6),rgba(250, 250, 252,.6)),url(../img/blood.svg);
+    background-repeat: repeat;
+    .drop{
+        position: absolute;
+        top: 20px;
+        left: 10%;
+        width: 10px;
+        height: 10px;
+        background: red;
+        border-radius: 1em;
+        border-top-right-radius: .2em;
+
+        animation: droping 2s linear infinite;
+
+        &:nth-child(2){
+            left: 12%;
+            animation-delay: .6s;
+        }
+        &:nth-child(3){
+            left: 14%;
+            animation-delay: .12s;
+        }
+        &:nth-child(4){ 
+            left: 16%;
+            animation-delay: .18s;
+        }
+        @keyframes droping{
+            0%{
+                opacity: 0.2;
+                transform: translateY(0) rotate(-40deg);
+
+              }
+              20%{
+                opacity: 1;
+              }
+              90%{
+                
+                transform: translateY(350px) rotate(-40deg);
+              }
+              100%{
+                  opacity: 0;
+              }
+            }
+    }
+    .round{
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        // background: #53354a;
+        background: #522546;  
+        
+        top: -31px;
+        right: -1119px;
+        border-radius: 50%;
+        z-index: 100;
+        i{
+            position: absolute; 
+            top: 10px;
+            right: 40px;
+            color: #fff;
+            font-size: 25px;
+         
+        }
+        p{
+            position: absolute;     
+            top: 38px;  
+            left: 34px;  
+            color: #fff;    
+            padding:0px;   
+            margin: 0;  
+            font-size: 20px;
+            
+        }
+        span{
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 70px; 
+            left: 45px;     
+            color: #fff;  
+            font-size: 20px;  
+        }
+    }
+    .img_back{
+        position: absolute;
+        top: -12%;
+        left: 0;
+        width: 100%;
+        height: 200px;
+    }
+    .emmergency_search_box{
+        z-index: 1;
+        position: relative;
+        width: 70%;
+        height: 300px;
+        margin-left: 15%;
+        background: #FCFCFD;
+        box-shadow: 0 10px 25px #d6d1d1; 
+        overflow: hidden;
+      
+        img{
+            position: absolute;
+            top: -140px;
+            left: 0%;
+            width: 100%;
+            z-index: -1;
+        }
+        h2{
+            padding-top: 30px;
+            font-size: 30px;
+            color: #29415F;
+            //color: $primary_color;
+            color: rgb(63, 12, 245);
+            margin-top: 20px;
+            font-weight: 700;
+            //text-shadow: 2px 1px 0 rgb(63, 12, 245), 5px 4px 0 rgba(216, 216, 216, 0.15);
+            span{
+                color: $primary_color;
+            }
+        }
+        .emmergency_search_box_content{
+            position: relative;
+            width: 100%;
+            margin-top: 45px;
+            left: 0;
+            z-index: 100;
+            padding: 0 15px;
+            .blood_box{
+                position: relative;
+                label{
+                    font-weight: bold;
+                    color: #29415F;
+                    font-size: 18px;
+                }
+                i{
+                    position: absolute;
+                    color: rgb(150, 13, 13);
+                    font-size: 20px;
+                    top: 5px;
+                    left: 60px;
+                }
+            }
+            .city_box{
+                label{
+                    font-weight: bold;
+                    color: #29415F;
+                    font-size: 18px;
+                    margin-left: 17px;
+                }
+                i{
+                    position: absolute;
+                    color: rgb(150, 13, 13);
+                    font-size: 20px;
+                    top: 5px;
+                    left: 75px;
+                }
+            }
+            a{
+                background: #B22626;
+                color: #fff;
+                
+            }
+            input[type="submit"]{
+                background: #B22626;
+               padding: 5px 15px;
+                color: #fff;
+                border-radius: 20px 0px 20px 0px ;
+                transition: .5s;
+                &:hover{
+                    border-radius: 0px 20px 0px 20px ;
+                    transition: .5s;
+                    background: #29415F;
+                    background: rgb(103, 62, 253);
+                }
+            }
+        }
+        .emmergency_search_box_footer{
+            position: absolute;
+            top: -427px;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .fixed_icon{
+        cursor: pointer;
+        background: #89081E;
+        color: rgb(255, 255, 255);
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 30px;
+        position: fixed;
+        z-index: 99999;
+        right: 0;
+        bottom: 15px;
+        //display: none;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+/*.................................................................................................*/
+/*THIRD SECTION START HERE.....................................................................*/
+#Third_section{
+    font-family: 'Merriweather', serif;
+    padding: 50px 0;
+    background: #FCFCFD;
+    .abc{
+        position: relative;
+        height: 300px;
+        width: 80%;
+        margin-left: 0%;
+        background: url(../img/bg1.svg);
+        border-top-right-radius: 300px;
+        box-shadow: 0 10px 25px rgb(214, 209, 209);
+        border-bottom:10px solid #29415F;
+        .ic{
+            i{
+                color: $primary_color;
+                font-size: 40px;
+                margin-top: 10px;
+                font-weight: bold;
+                animation: sake 4s linear infinite;
+            }
+            @keyframes sake {
+                0% {
+                  transform:rotate(0deg);top:-20px;
+                }
+                25% {
+                   transform:rotate(00deg);top:-10px;
+                }
+                50% {
+                   transform:rotate(0deg);top:0px;
+                }
+                75% {
+                   transform:rotate(180deg);top:10px;
+                }
+                100% {
+                  transform: rotate(180deg);top:20px;
+                }
+              }
+        }
+        .emr_title{
+            padding:20px 0;
+            font-family: 'Merriweather', serif; 
+            font-weight: 700;
+            font-size: 25px;
+            color: #29415F;
+        }
+        p{
+            padding: 0 30px;
+            color: #29415F;
+            font-size: 17px;
+        }
+        .test{
+            padding-left: 100px;
+            p{
+                color: #29415F;
+            }
+            i{
+                color: #29415F;
+                font-weight: bold;
+            }
+        }
+    }
+    .custom_main_box{
+        position: relative;
+      //  border-bottom: 5px solid #29415F;
+        padding-bottom: 30px;
+        margin-top: 25px; 
+        &::after{
+            position: absolute;
+            content: '';
+            width:40%;
+            height: 3px;
+            bottom:9%;  
+            left: 30%;
+            background: #29415f;
+            animation: anim_one 4s linear infinite;
+          //  animation-delay: 2s; 
+         }
+         &::before{
+            position: absolute;
+            content: '';
+            width:40%;
+            height: 3px;
+            bottom: 13%;  
+            left: 30%;
+            background: #29415f;
+            animation: anim_two 4s linear infinite;
+          //  animation-delay: 2s; 
+         }
+        @keyframes anim_one{
+            0%{
+                width:40%;
+                left: 30%;
+              }
+              50%{
+                width: 10%;
+                left: 45%;
+              }
+              100%{
+                width:40%;
+                left: 30%;
+              }
+            }
+            @keyframes anim_two{
+                0%{
+                    width: 10%;
+                    left: 45%;
+                  }
+                  50%{
+                    width:40%;
+                    left: 30%;
+                  }
+                  100%{
+                    width: 10%;
+                    left: 45%;
+                  }
+                }
+        img{
+            position: relative;
+            margin-right: -1000px;
+            transition: .5s;
+            width: 150px;
+            height: 150px;
+            background: transparent;
+            padding: 20px;
+        }
+        i{
+            font-size: 85px;
+            color: #B22626;
+        }
+        p{
+            color: $text_color;
+        }
+    }
+}
+/*.................................................................................................*/
+/*FOURTH SECTION START HERE.......................................................................*/ 
+#Four_section{ 
+    position: relative;   
+    padding: 50px 0;
+    background: #FCFCFD;    
+                                                                                                                              
+    .blood_group_descrioption{
+        width: 100%;
+        margin-top: 20px;
+        padding: 1px;
+        background: rgb(240, 242, 253);
+        border:none;
+        padding: 5px;
+        .card{
+            border-radius: 12px;
+            border: none;
+            text-align: center;
+        }
+        .blood_info{
+            background: rgb(240, 242, 253);
+            height: 250px;
+            h4{
+                text-align: center;
+                position: relative;
+                margin: 5px 0;
+                color: #B22626;
+                font-size: 35px;
+                font-weight: bold;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 80%;
+                    height: 3px;
+                    background: #29415F;
+                    bottom: -7px;
+                    left: 10%;
+                }
+            }
+            p{
+                padding: 7px;
+                text-align: justify;
+                font-size: 15px;
+            }
+            .percent,.status{
+                font-size: 16px;
+                margin:  0;
+                padding: 1px 5px;
+                text-align: center;
+                span{
+                    color: #B22626;
+                    font-weight: bold;
+                    font-size: 20px;;
+                }
+            }
+        }
+    }
+}
+
+/*FIFTH SECTION START HERE.....................................................................*/
+#Fifth_section{
+    padding: 50px 0;
+    background: #FCFCFD;
+    .business_card {
+        width: 100%;
+        height: 300px;
+        background: #fff;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        border-top: 12px solid #B22626;
+        box-shadow: 0 10px 25px #d6d1d1;
+        i {
+          display: block;
+          background: #B22626;
+          color: #fff;
+          padding: 20px;
+          border-radius: 50%;
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 18px;
+          color: $text_color;
+          font-weight: bold;
+          strong{
+              color: #B22626;
+          }
+        }
+        p {
+          color: #343a40;
+          font-size: 17px;
+          strong{
+              color: green;
+          }
+        }
+        &:hover {
+          height: 300px;
+          background: rgb(245, 247, 250);
+          box-shadow: 1px 1px 40px 1px #ddd;
+          border-radius: 2px;
+          transition: .3s;
+          h5, p {
+            color: #000;
+          }
+          i {
+            background: #fff;
+            color: #B22626;
+            transition: .3s;
+          }
+        }
+      }
+      a{
+          margin-top: 20px;
+          background: rgb(109, 72, 241); 
+          color: #fff; 
+      }
+}
+
+
+/*.................................................................................................*/
+/*SIX SECTION START HERE.....................................................................*/
+#Six_section{
+    padding: 50px 0;
+    background: #FCFCFD;
+
+    .our_instruction{
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        background: #fff;
+        box-shadow: 0 10px 25px #d6d1d1;
+        color: #29415F;
+        text-align: justify;
+
+        ul{
+            list-style: none;
+            padding: 50px 0;
+            li{
+                padding: 0 50px;
+                p{
+                    i{
+                        color: $primary_color;
+                        font-weight: bold;
+                        font-size: 22px; 
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .our_tips{
+           text-align: center;
+           i{
+               font-size: 25px;
+               color: rgb(255, 251, 2);
+               background: #6D48F1;
+               padding: 20px;
+               border-radius: 50%;
+                transition: .5s;
+               &:hover{
+                color: #ffffff;
+                background: #2b2e4a;
+                transition: .5s;
+            }
+           }
+        p{
+            font-size: 18px;
+            transition: .5s;
+         }
+        
+        }
+        &:hover{
+            .fa-arrow-circle-up{
+                transform: rotate(90deg);
+                transition: .5s;
+            }
+        }
+    }
+    
+}
+
+/*.................................................................................................*/
+/*SEVEN SECTION START HERE.........................................................................*/ 
+#Seven_section{ 
+    position: relative; 
+    background: #FCFCFD;
+    padding: 50px 0;
+    .down{
+        margin-bottom: 50px;
+    }
+    .feed_back_text{
+        margin-top: 55px;
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #29415F;
+            font-family: 'Merriweather', serif;
+          }
+          p {
+            font-size: 18px;
+            color: #29415F;
+          }
+    }
+  
+    .mobile_box{
+        position: relative;
+        background: rgb(255, 255, 255);
+        width: 96%;
+        height: 300px;
+        margin-left: 3%;
+        box-shadow: 0 10px 25px #d6d1d1;
+        padding: 20px;
+            .form-group{
+                label{
+                    font-weight: bold;
+                    color: #29415F;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+    }
+  }
+
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*.................................................BLOOD BANK PAGE...................................................*/
+#Blood_bank_section{
+    position: relative;
+    padding: 50px 0;
+    background: #fff;
+
+    .business_card { 
+        margin-top: 20px;
+        width: 94%;
+        height: 300px;
+        background: #fff;
+        margin-left: 3%;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        border-top: 12px solid $primary_color;
+        box-shadow: 0 10px 25px #d6d1d1;
+        span{
+            i {
+                display: block;    
+                background: $primary_color;
+                color: #fff;
+                padding: 15px;
+                border-radius: 50%;
+                font-size: 16px;
+                margin-left: 15px; 
+              }
+        }
+        
+        h5 {
+          font-size: 18px;
+          font-weight: bold;
+          color: $text_color;
+          font-size: 20px;
+          text-align: left;
+          margin-top: 21px;
+          margin-left: 100px;
+        }
+        p {
+          color: $text_color;
+          font-size: 15px;
+          margin-left: 100px;
+          margin-top: 13px; 
+          i{
+              
+              color: $text_color;
+          }
+        }
+        small{
+            font-size: 14px;
+            margin-left: 100px;
+            color: $text_color;
+        }
+        &:hover {
+          background: rgb(250, 244, 234);
+          box-shadow: 1px 1px 40px 1px #ddd;
+          border-radius: 2px;
+          transition: .3s;
+          h5 {
+            color: #000;
+          }
+        }
+      }
+}
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*.................................................Facts PAGE...................................................*/
+
+
+#Fact_section{
+    position: relative;
+    padding: 50px 0;
+    background: #FBFBFB;
+
+    .first_facts_card{
+        border-top: 12px solid $primary_color;
+    }      
+    .facts_card {
+        margin-top: 20px;
+        width: 94%;
+        background: #fff;
+        margin-left: 3%;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        .hide_facts_icon{
+            display: block;
+        }
+        span{
+            i {
+                display: block;    
+                background: #6D48F1;
+                color: #FFFB02;
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 16px;
+                margin-left: 15px; 
+              }
+        }
+        
+        h5 {
+          font-size: 18px;
+          font-weight: bold;
+          color: $text_color;
+          font-size: 20px;
+          margin-top: 21px;
+          margin-left: 100px;
+        }
+        p {
+          color: $text_color;
+          font-size: 16px;
+          margin-left: 100px;
+          margin-top: 13px; 
+          i{
+              
+              color: $text_color;
+          }
+        }
+        small{
+            font-size: 14px;
+            margin-left: 100px;
+            color: $text_color;
+        }
+        // &:hover {
+        //   background: rgb(250, 244, 234);
+        //   box-shadow: 1px 1px 40px 1px #ddd;
+        //   border-radius: 2px;
+        //   transition: .3s;
+        //   h5 {
+        //     color: #000;
+        //   }
+        // }
+      }
+}
+
+
+
+/*...................................................................................................................*/
+/*.................................................SEARCH DONOR PAGE................................................*/
+
+#clickSection{
+    
+    padding: 30px 0;
+    position : relative;
+   // background: red;
+   span{
+    img{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: -50px;
+    }
+   }
+    p{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        font-size: 27px;
+        font-weight: 600;
+        color: #29415F;
+    }
+    button{
+        position: absolute;
+        background: rgb(80, 5, 116);
+        color: #fff;
+        padding: 8px 18px;
+        border-radius: 20px;
+        top: 2px;
+        right: 0;
+    }
+}
+#ResultSection{
+    padding: 5px 0; 
+    position: relative;
+    
+    .result_box{
+        padding-top: 15px;
+        position: relative;
+        width: 80%;
+        height: 200px;
+        background: #fff;
+        margin-left: 10%;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        border-top: 12px solid $primary_color;
+        box-shadow: 0 10px 25px #d6d1d1;
+        .picture_box{
+            position: absolute;
+            margin-top: 10px;
+            width: 110px;
+            height: 110px;
+            background: #6D48F1;
+            border-radius: 50%;
+            i{
+                position: absolute;
+                top: 34%;
+                left: 26%;
+                font-size: 40px;
+                color: #FFFB02;
+            }
+        }
+        .info_box{
+            position: absolute;
+            margin-top: 10px;
+            width: 72%;
+            height: 80%;
+           // background: #29415F;
+            right: 0;
+            h4{
+                font-weight: bold;
+                color: $text_color;
+            }
+            h6{
+                span{
+                    color: $primary_color;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*..............................................REGISTRATION PAGE...................................................*/
+#registration_section{
+    font-family: 'Merriweather', serif;
+    padding: 50px 0;
+    background: #fff;
+
+    h2{
+        
+    }
+
+    .shadow_box{
+        transition: .3s;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        box-shadow: 0 10px 25px #d6d1d1;
+        border-top: 10px solid $primary_color;
+        form{
+            position: relative;
+            .user_type_box{
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                width: 60%;
+                margin-left: 20%; 
+                height: 100px;
+                background: #F0F2FD;  
+                color: rgb(17, 10, 10);
+                
+            }
+            label{
+                font-weight: bold;
+                .format{
+                    color: rgb(135, 135, 136);
+                }
+            }
+            .test_height{
+      
+                overflow: hidden; 
+            }
+            .last_date_box{
+                margin-left: 30%;
+                label{
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+            // .birth_day_box{
+            //     margin-left: 30%;
+            //     label{
+            //         color: rgb(26, 12, 231);
+            //         font-size: 18px;
+            //     }
+            // }
+            #dateInput{
+                width: 30%;
+                margin-left: 10%;
+    
+                transition: .5;                                                                             
+                opacity: 0;                                                                                    
+            }
+            // #birthdate_id{
+            //     width: 30%;
+            //     margin-left: 10%;
+            //     transition: .5;                                                                             
+            // }
+            input[type="submit"],
+            input[type="reset"]{
+                border-radius: 30px;;
+            }
+            #date_format{
+                color: rgb(185, 6, 6);
+                font-size: 16px;
+                transition: .5s;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*..................................................LOGIN PAGE.......................................................*/
+#Login_section{
+ padding: 50px 0;
+ font-family: 'Merriweather', serif;
+
+    .login_box{
+        border-top: 10px solid $primary_color;
+        background: red;;
+        z-index: 1;
+        position: relative;
+        background: rgb(255, 255, 255);
+        width: 70%;
+        height: 350px;
+        margin-left: 15%;
+        box-shadow: 0 10px 25px #d6d1d1;
+        .login_box_content{
+            position: relative;
+            width: 100%;
+            margin-top: 65px;
+            left: 24%;
+            z-index: 100;
+            padding: 0 15px;
+
+          form{
+              input[type="submit"]{
+                  margin-top: 10px;
+                  background: #29415F;
+                  color: #fff;
+                  padding: 5px 20px;
+                  border-radius: 30px;
+              }
+          }
+        }
+    }
+}
+
+
+/*...................................................................................................................*/
+/*..................................................Forgot password PAGE.......................................................*/
+
+#Forgot_password_section{
+    padding: 50px 0;
+    font-family: 'Merriweather', serif;
+   
+       .recovery_box{
+           border-top: 10px solid $primary_color;
+           z-index: 1;
+           position: relative;
+           background: rgb(255, 255, 255);
+           width: 100%;
+           //height: 350px;
+           margin-left: 0%;
+           box-shadow: 0 10px 25px #d6d1d1;
+           .recovery_box_content{
+               text-align: left;
+               position: relative;
+               width: 60%;
+               margin-top: 65px;
+               left: 20%;
+               z-index: 100;
+               padding: 0 15px;
+   
+             form{
+                 .warn{
+                     color: rgb(196, 30, 30);
+                     font-size: 23px;
+                     margin-bottom: 50px;
+                     display: block; 
+                     &::after{
+                        position: absolute;
+                        content: '';
+                        width:200px;
+                        height: 3px;
+                        top: 9%;  
+                        left: 0;
+                        background: #29415f;
+                        animation: anim_up_down_one 4s linear infinite;
+                      //  animation-delay: 2s; 
+                     }
+                     &::before{
+                        position: absolute;
+                        content: '';
+                        width:200px;
+                        height: 3px;
+                        top: 11%;  
+                        left: 0;
+                        background: #29415f;
+                        animation: anim_up_down_two 4s linear infinite;
+                      //  animation-delay: 2s; 
+                     }
+                 }
+                 @keyframes anim_up_down_one{
+                    0%{
+                        width:200px;
+                        left: 0;
+                      }
+                      50%{
+                        width: 25px;
+                        left: 75px;
+                      }
+                      100%{
+                        width:200px;
+                        left: 0;
+                      }
+                    }
+                    @keyframes anim_up_down_two{
+                        0%{
+                            width: 25px;
+                            left: 75px;
+                          }
+                          50%{
+                            width:200px;
+                            left: 0;
+                          }
+                          100%{
+                            width: 25px;
+                            left: 75px;
+                          }
+                        }
+                label{
+                    text-align: left;
+                }
+                 input[type="submit"]{
+                     margin-top: 10px;
+                     background: #29415F;
+                     color: #fff;
+                     padding: 5px 20px;
+                     border-radius: 30px;
+                     margin-left: 33%;
+                 }
+             }
+           }
+       }
+   }
+
+
+
+
+/*.................................................................................................................*/
+/*.................................................PROFILE PAGE.................................................*/
+#Profile_section{
+    position: relative;
+    padding: 40px 0;
+    font-family: 'Merriweather', serif;
+    background: #F8F9FA;
+    img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 25%;
+    }
+   .profile_box{
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    background: #fff;
+    
+    margin-left: 5%;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    border-top: 12px solid $primary_color;
+    box-shadow: 0 10px 25px #d6d1d1;
+
+    button{
+        margin-top: 15px;
+        margin-left: 12px;
+        background: #6D48F1;
+        color: rgb(255, 255, 255);
+    }
+    a{
+        margin-top: 15px;
+        margin-left: 13px;
+        background: rgb(212, 64, 19);
+        color: rgb(255, 255, 255);
+    }
+    p{
+        color: #29415F;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        span{
+            i{
+                color: #B22626;
+                padding: 0px 15px;
+            }
+        }
+    }
+   
+}
+  .shadow_box{
+    transition: .3s;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 10px 25px #d6d1d1;
+    label{
+        font-weight: bold;
+    }
+    .last_date_box{
+        margin-left: 30%;
+        
+        label{
+            color: red;
+        font-size: 18px;
+        }
+    }
+    #dateInput{
+        width: 50%;
+        margin-left: 10%;
+
+        transition: .5;                                                                             
+        opacity: 0;                                                                                    
+    }
+    input[type="submit"],
+    input[type="reset"]{
+        border-radius: 30px;
+    }
+    #date_format{
+        color: rgb(185, 6, 6); 
+        font-size: 16px;
+        transition: .5s;
+        opacity: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*...............................................CHANGE PASSWORD PAGE................................................*/
+
+#Change_password_section{
+    font-family: 'Merriweather', serif;
+    
+    .update_box{
+        width: 70%;
+        margin-left: 15%;
+
+        form{
+            label{
+                font-weight: bold;
+                color: #29415F;
+            }
+            a{
+                border-radius: 30px;
+                background: #007BFF;
+                color: #fff;
+                margin-top: 5px;
+                margin-bottom: 0px;
+                margin-left: 0%;
+            }
+            input[type="submit"]{
+                background: #6D48F1;
+                color: #fff;
+                border-radius: 30px;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                margin-left: 0%;
+            }
+            .frgtpass{
+                background: rgb(179, 43, 1);
+                color: #fff; 
+                border-radius: 30px;
+                margin-top: 25px;
+                margin-bottom: 20px;   
+                margin-left: 0%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*...................................................................................................................*/
+/*.................................................FOOTER...................................................*/
+#footer_section {
+    font-family: 'Merriweather', serif;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    //background: $primary_color;
+    background: rgb(66,6,10);
+    background: linear-gradient(0deg, rgba(66,6,10,1) 0%, rgba(164,8,38,1) 100%, rgba(19,1,3,1) 100%);
+
+    ul{
+        display: block;
+        li{
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    .con{
+        h5{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    .developer{
+        color: #fff;
+        h4{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+    }
+    .contributor{
+        color: #fff;
+        h4{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h5{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+    }
+    .hide_contributor_for_lg{
+        display: none;
+    }
+    .hide_contributor_for_sm{
+        display: block;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.................................................................................................*/
+/*RESPONSIVE CODE START HERE.....................................................................*/
+/*.................................................................................................*/
+@media only screen and (max-width: 2000px){
+
+}
+@media only screen and (max-width: 1440px){
+
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 1024px){
+
+    #Four_section{ 
+                                                                                                                               
+        .blood_group_descrioption{
+            .blood_info{
+               .mtTop{
+                   display: block;
+                   margin-top: 36px;
+               }
+                
+            }
+        }
+    }
+
+
+
+    .First_section{
+        padding-bottom: 20px; 
+    }
+    // second section responsive part start here............................................
+    #Second_section{
+        background-position: center;
+        .emmergency_search_box{
+            img{
+                width: 120%;
+            }
+            .emmergency_search_box_content{
+                .blood_box{
+                    i{
+                        left: 35px;
+                    }
+                }
+                .city_box{
+                    i{
+                        left: 50px;
+                    }
+                }
+            }
+        }
+    }
+    //....................................................................
+    #Third_section{
+        padding: 50px 0;
+        .abc{
+            width: 90%;
+            .title{
+                padding:20px 0;
+                font-size: 24px;
+            }
+        }
+    }
+    #Fifth_section{
+        .business_card{
+            height: 320px;
+        }
+    }
+//....................................................................
+#Six_section{
+    .our_instruction{
+        ul{
+            li{
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .our_tips{
+        p{
+            font-size: 17px;
+        }
+        }
+    }
+}
+// Blood bank section responsive code start here........................................
+#Blood_bank_section{
+ 
+    img{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: -80px;
+        left:46%;
+
+    }
+    .business_card {
+        width: 100%;
+        height: 300px;
+        margin-left: 0%;
+
+        i {
+          display: block;    
+          background: rgb(119, 7, 7);
+          color: #fff;
+          padding: 15px;
+          border-radius: 50%;
+          font-size: 16px; 
+          margin-left: 15px;
+        }
+        h5 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #343a40;
+          font-size: 17px;
+          text-align: center;
+            margin-top: 21px;
+            margin-left: 50px;
+        }
+        p {
+          color: #343a40;
+          font-size: 15px;
+          margin-left: 58px;
+          margin-top: 13px;
+        }
+        small{
+            font-size: 14px;
+            margin-left: 58px;
+        }
+        &:hover {
+          width: 100%;
+          height: 300px;
+          background: rgb(250, 244, 234);
+          margin-left: 0%;
+          box-shadow: 1px 1px 40px 1px #ddd;
+          border-radius: 2px;
+          transition: .3s;
+        }
+      }
+    }
+    #Profile_section{
+        img{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 22%;
+        }
+    }
+    #clickSection{
+        span{
+            img{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                left: -50px;
+                display: none;
+            }
+           }
+    }
+    
+}
+// @media only screen and (max-width: 992px) {
+//     #searchDonor{
+//         table{
+            
+//                 th:nth-child(1){
+//                    display: none;
+//                 }
+            
+//         }
+//     }
+    
+//   }
+  @media only screen and (max-width: 768px){
+    
+    .First_section{
+       padding-top: 10px;
+       padding-bottom: 15px;
+
+       .logo_box{
+           height: 100px;
+           width: 100px;
+           border-radius: 50%;
+           img{
+               width: 80px;
+               height: 80px;
+               margin-top: 10px;
+           }   
+       }
+       .contact_box{
+           width: 70%;
+           margin-left: 20%;
+           height: 80%;
+           margin-top: 5%;
+           img{
+               width: 45px;
+               height: 25px;
+               margin: 0 10px;
+           }
+           p{
+              font-size: 16px;
+           }
+       }
+       .third_part{
+           a{
+               padding:5px 40px; 
+               margin-bottom: 18px;
+           }
+           p{
+               font-size: 15px;
+           }
+       }
+   // nav item .............
+   nav{
+       margin-top: 0px;
+       .first_nav_item{
+           border-radius: 30px;
+           border-right: 1px solid #fff;
+           padding: 0 20px; 
+           li{
+               padding: 0px 15px;
+           }
+           .sinsm{
+               display: block;
+           }
+           .sinlg{
+               display: none;
+           }
+       }
+       .second_nav_item{
+           padding: 0 10px;
+           li{
+               padding: 0px 5px;
+           }
+           .nav_divider{  
+                background: rgb(205, 203, 226);
+           }
+       }
+    }
+   }
+   //.........................................................................
+   #Second_section{
+    background-position: center;
+    .round{
+        display: none;
+    }
+    .emmergency_search_box{
+        width: 100%;
+        margin-left: 0%;
+        h2{
+            font-size: 25px;
+        }
+        img{
+            width: 110%;
+        }
+        .emmergency_search_box_content{
+            .blood_box{
+                label{
+                    font-size: 16px;  
+                }
+                select{
+                     option{
+                         font-size: 10px;
+                     }
+                }
+                i{
+                    left: 20px;
+                }
+            }
+            .city_box{
+                label{
+                    font-size: 16px;  
+                }
+                i{
+                    left: 33px;
+                }
+            }
+        }
+    }
+}
+//....................................................................................
+#Third_section{
+    .abc{
+        position: relative;
+        height: 300px;
+        width: 86%;
+        margin-left: 7%;
+        background: url(../img/bg1.svg);
+        border-top-right-radius: 300px;
+        box-shadow: 0 10px 25px rgb(214, 209, 209);
+        
+        border-bottom:10px solid #29415F;
+        .ic{
+            i{
+                
+                color: #B22626;
+                font-size: 40px;
+            }
+        }
+        .title{
+            padding:20px 0;
+            font-family: 'Lobster', cursive;
+            color: #29415F;
+        }
+        p{
+            padding: 0 100px;
+            color: #29415F;
+            font-size: 17px;
+        }
+        .test{
+            padding-left: 35px;
+        }
+        .emr_title{
+            font-size: 22px;
+        }
+    }
+    .custom_main_box{ 
+        border-bottom: none;
+        padding-bottom: 30px;
+
+        img{
+            
+            margin-top: 0px;
+            width: 120px;
+            height: 120px;
+
+        }
+    }
+    
+  }
+/*FOURTH SECTION START HERE.....................................................................*/
+#Four_section{
+    .blood_group_descrioption{
+        .blood_info{
+            height: 200px;
+            h4{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .mtTop{
+                margin-top: 0px;
+            }
+        }
+    }
+}
+  #Fifth_section{
+    .business_card{
+        height: 250px;
+    }
+    .head_box{
+        
+        img{
+            left: 44%;
+        }
+    }
+  }
+  #Six_section{
+    
+    .our_instruction{
+        .our_tips{
+            span{
+                i{
+                    padding: 15px;
+                }
+            }
+        p{
+            font-size: 16px;
+            padding: 0px 5px;
+         }
+        }
+    }
+}
+//.......................................................................
+#Seven_section {
+    .down{
+        margin-bottom: 40px;
+    }
+    h5 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .mobile_box{
+        width: 400px;
+        height: 350px;
+        padding-bottom: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+       
+        .mobile_content{
+            position: absolute;
+            width: 100%;
+            top: 100px;
+            left: 0;
+            padding: 0 15px;
+        }
+    }
+  }
+
+  /*.................................................FOOTER...................................................*/
+#footer_section {
+    font-family: 'Merriweather', serif;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    background: rgb(66,6,10);
+    background: linear-gradient(0deg, rgba(66,6,10,1) 0%, rgba(164,8,38,1) 100%, rgba(19,1,3,1) 100%);
+    
+
+    .developer{
+        h4{
+            font-size: 17px;
+        }
+        h5{
+            font-size: 16px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .contributor{
+
+        margin-top: 50px;
+        h4{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h5{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    
+  }
+
+
+
+  //....................................................................
+  #Blood_bank_section{
+   
+    img{
+        left:43%;
+    }
+    .business_card {
+        width: 100%;
+        height: 300px;
+        margin-left: 0%;
+        h5 {
+          font-weight: bold;
+          font-size: 16px;
+          text-align: left;
+            margin-top: 21px;
+            margin-left: 30px;
+        }
+        p {
+          text-align: left;
+          font-size: 13px;
+          margin-left: 30px;
+          margin-top: 13px;
+        }
+        small{
+            font-size: 13px;
+            margin-left: 30px;
+        }
+      }
+    }
+    //.....................................................................
+    /*...................................................................................................................*/
+/*.................................................SEARCH DONOR PAGE................................................*/
+        
+#clickSection{
+    position: relative;
+    padding: 30px 0;
+    
+    p{
+        font-size: 22px;
+    }
+    button{
+        padding: 6px 16px;
+    }
+}
+#ResultSection{
+    padding: 5px 0;
+    .result_box{
+        padding-top: 15px;
+        width: 96%;
+        height: 165px;
+        margin-left: 2%;
+        margin-bottom: 25px;
+        .picture_box{
+            margin-top: 10px;
+            width: 75px;
+            height: 75px;
+            i{
+                position: absolute;
+                top: 34%;
+                left: 24%;
+                font-size: 34px;
+                color: #FFFB02;
+            }
+        }
+        .info_box{
+            margin-top: 10px;
+            width: 75%;
+            h4{
+                font-size: 18px;
+            }
+            h6{
+                font-size: 13px;
+            }
+        }
+    }
+ }
+ #Profile_section{
+     img{
+         margin-left: -5%;
+     }
+    .profile_box{
+     width: 100%;
+     height: 320px;
+     margin-left: 0%;
+
+     button{
+         margin-top: 32px;
+         margin-left: 12px;
+     }
+     a{
+         margin-top: 32px;
+         margin-left: 13px;
+     }
+     p{
+         font-size: 16px;
+         span{
+             i{
+                 padding: 0px 15px;
+             }
+         }
+         strong{
+             display: none;
+         }
+     }
+    
+ }
+     
+ }
+ #Login_section{
+       .login_box{
+           width: 100%;
+           margin-left: 0%;
+           .login_box_content{
+               position: relative;
+               width: 100%;
+               left: 24%;
+           }
+       }
+   }
+   #registration_section{
+    .shadow_box{
+        form{
+            #dateInput{
+                width: 50%;                                                                                   
+            }
+        }
+    }
+ }
+ 
+ #Forgot_password_section{
+       .recovery_box{
+           width: 100%;
+           margin-left: 0%;
+           .recovery_box_content{
+               width: 60%;
+               margin-top: 65px;
+               left: 20%;
+               padding: 0 15px;
+             form{
+                .warn{
+                    color: rgb(196, 30, 30);
+                    font-size: 23px;
+                    margin-bottom: 50px;
+                    display: block; 
+                    &::after{
+                       position: absolute;
+                       content: '';
+                       width:200px;
+                       height: 3px;
+                       top: 9%;  
+                       left: 0;
+                       background: #29415f;
+                       animation: anim_up_down_one 4s linear infinite;
+                     //  animation-delay: 2s; 
+                    }
+                    &::before{
+                       position: absolute;
+                       content: '';
+                       width:200px;
+                       height: 3px;
+                       top: 11%;  
+                       left: 0;
+                       background: #29415f;
+                       animation: anim_up_down_two 4s linear infinite;
+                     //  animation-delay: 2s; 
+                    }
+                }
+                @keyframes anim_up_down_one{
+                   0%{
+                       width:200px;
+                       left: 0;
+                     }
+                     50%{
+                       width: 25px;
+                       left: 75px;
+                     }
+                     100%{
+                       width:200px;
+                       left: 0;
+                     }
+                   }
+                   @keyframes anim_up_down_two{
+                       0%{
+                           width: 25px;
+                           left: 75px;
+                         }
+                         50%{
+                           width:200px;
+                           left: 0;
+                         }
+                         100%{
+                           width: 25px;
+                           left: 75px;
+                         }
+                       }
+                 input[type="submit"]{
+                     margin-top: 10px;
+                     padding: 5px 20px;
+                     margin-left: 33%;
+                 }
+             }
+           }
+       }
+   }
+}
+  @media only screen and (max-width: 576px){ 
+    .title{
+        font-size: 25px;
+        i{
+            font-size: 38px;
+        }
+    }
+    .sub_title{
+        margin-top: -15px;
+    }
+    .First_section{
+        padding-top: 0px;
+        padding-bottom: 0px;
+ 
+        .logo_box{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-left: 42%;
+            margin-bottom: 35px;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-top: 10px;
+            }   
+            h4{
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+        .contact_box{
+            
+            width: 70%;
+            margin-left: 22%;
+            //height: 80%;
+            margin-top: 2%;
+            img{
+                width: 35px;
+                height: 20px;
+                margin: 0 10px;
+            }
+            p{
+               font-size: 14px;
+               margin-bottom: 0;
+            }
+        }
+        .third_part{
+           
+            a{
+                padding:1px 25px; 
+                margin-top: 5px;
+                margin-bottom: 1px;
+                font-size: 18px;
+            }
+            .hide{
+                display: block;
+                width: 25%;
+                margin-left: 37%;
+                padding: 0px 0;
+                margin-top: -15px;
+            }
+            p{
+                font-size: 15px;
+                display: none;
+            }
+        }
+    // nav item .............
+    nav{
+        margin-top: 0px;
+        .first_nav_item{
+            background: none;
+            border-radius: 5px;
+            border-right: none;
+            padding: 0 20px; 
+            li{
+                padding: 0px 15px;
+               a{
+                color: #fff;
+                i{
+                    display: none;
+                }
+               }
+
+            }
+        }
+        .second_nav_item{
+            display: none;
+            background: none;
+            padding: 0 10px;
+            li{
+                padding: 0px 5px;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+     }
+    }
+       //.........................................................................
+   #Second_section{
+    background-position: center;
+    .emmergency_search_box{
+        width: 100%;
+        margin-left: 0%;
+        h2{
+            font-size: 22px;
+        }
+        img{
+            width: 170%;
+        }
+        .emmergency_search_box_content{
+            .blood_box{
+                label{
+                    font-size: 14px;  
+                }
+               
+                i{
+                    left: -10px;
+                }
+            }
+            .city_box{
+                label{
+                    font-size: 14px;  
+                }
+                i{
+                    left: 5px;
+                }
+            }
+            option{
+                font-size: 13px;
+            }
+        }
+        input[type="submit"]{
+            font-size: 13px;;
+        }
+    }
+}
+#Third_section{
+    padding: 50px 0;
+   
+    .abc{
+        height: 350px;
+        width: 90%;
+        margin-left: 5%;
+        background: url(../img/bg1.svg);
+        border-top-right-radius: 0px;
+        box-shadow: 0 10px 25px rgb(214, 209, 209);
+        border-bottom:9px solid #29415F;
+        .ic{
+            i{
+                margin-top: 50px;
+                font-size: 30px;
+            }
+        }
+        p{
+            padding: 0 25px;
+            color: #29415F;
+            font-size: 16px;
+        }
+       
+        .test{
+            padding-left: 5px;
+            i{
+                margin-left: 10px;
+            }
+        }
+        .emr_title{
+            font-size: 20px;
+        }
+
+    }
+    .custom_main_box{ 
+        border-bottom: none;
+        padding-bottom: 30px;
+
+        img{
+            margin-top: 0px;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            font-size: 17px;
+        }
+       }
+    }
+    //...........................................................................
+    #Four_section{
+        padding: 10px 0;
+    }
+    //...........................................................................
+    #Fifth_section{
+        .head_box{
+            img{
+                left: 41%;
+            }
+        }
+        .business_card {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 25px;
+            i {
+              padding: 20px;
+              font-size: 16px;
+            }
+            h5 {
+                font-size: 16px;
+                
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+    }
+    #Six_section{
+        h2{
+            font-size: 22px;
+        }
+        .head_box{
+            img{
+                left: 42%;
+            }
+        }
+        .our_instruction{
+            ul{
+                li{
+                    p{
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+            .our_tips{
+                span{
+                    i{
+                        padding: 12px;
+                        font-size: 20px;
+                    }
+                }
+            p{
+                font-size: 14px;
+             }
+            }
+        }
+    }
+    //.......................................................
+    
+    #Seven_section{
+        padding: 50px 0;
+        .down{
+            margin-bottom: 0px;
+        }
+        .feed_back_text{
+            margin-top: 10px;
+            h2 {
+                text-align: center;
+                font-size: 22px;
+                font-weight: 700;
+                color: #29415F;
+                font-family: 'Merriweather', serif;
+              }
+              p {
+                  text-align: justify;
+                font-size: 18px;
+                color: #29415F;
+              }
+        }
+      
+        .mobile_box{
+            position: relative;
+            width: 96%;
+            height: 300px;
+            margin-left: 3%;
+            padding: 20px;
+        }
+      }    
+
+  /*.................................................FOOTER...................................................*/
+  #footer_section {
+      text-align: center;
+      ul{
+          display: none;
+      }
+      .con{
+          h5{
+              font-size: 18px;
+          }
+          p{
+              font-size: 12px;
+          }
+      }
+      .developer{
+          h4{
+            font-size: 15px;
+          }
+          h5{
+            font-size: 14px;
+          }
+          p{
+            font-size: 13px;
+          }
+      }
+    .hide_contributor_for_lg{
+        display: block;
+    }
+    .hide_contributor_for_sm{
+        display: none;
+    }
+  }
+
+
+
+
+      #Blood_bank_section{
+        .business_card {
+            span{
+                i {
+                    font-size: 14px;
+                  }
+            }
+            h5 {
+              font-size: 16px;
+              margin-top: 21px;
+              margin-left: 40px;
+            }
+            p {
+              font-size: 14px;
+              margin-left: 40px;
+            }
+            small{
+                font-size: 14px;
+                margin-left: 40px;
+            }
+          }
+    }
+   
+
+
+
+
+
+
+    #Fact_section{
+     
+        .facts_card {
+            .hide_facts_icon{
+                display: none;
+            }
+            h5 {
+              font-weight: bold;
+              color: $text_color;
+              font-size: 18px;
+              margin-left: 20px;
+            }
+            p {
+              color: $text_color;
+              font-size: 15px;
+              margin-left: 20px;
+            }
+          }
+    }
+
+
+
+
+
+    #clickSection{
+        padding: 30px 0;
+       span{
+           i{
+               font-size: 18px;
+               margin: 0 30px;
+           }
+       }
+        p{
+            font-size: 18px;
+        }
+        button{
+            padding: 2px 8px;
+            top: -30px;
+            right: 50px;
+            font-size: 14px;
+        }
+    }
+    #ResultSection{
+        padding: 5px 0;
+        .result_box{
+            padding-top: 10px;
+            width: 96%;
+            height: 165px;
+            margin-left: 2%;
+            margin-bottom: 25px;
+            border-top: 9px solid $primary_color;
+            .picture_box{
+                margin-top: 0px; 
+                width: 50px;
+                height: 50px;
+                i{
+                    font-size: 23px;
+
+                }
+            }
+            .info_box{
+                margin-top: 0px;
+                width: 75%;
+                h4{
+                    font-size: 16px;
+                }
+                h6{
+                    font-size: 11px;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                .hideData{
+                    display: none;
+                }
+            }
+        }
+     }
+     #Profile_section{
+        img{
+            width: 40px;
+            height: 40px;
+            margin-top: 8px;
+            margin-left: -15%;
+        }
+        .profile_box{
+         height: 390px;
+         button{
+             margin-top: 5px;
+             font-size: 14px;
+         }
+         a{
+             margin-top: 5px;
+             font-size: 14px;
+         }
+         p{
+             font-size: 16px;
+         }
+         .hdst{
+             display: none;
+         }
+     }
+         
+     }
+
+
+     #Change_password_section{
+        .update_box{
+            width: 70%;
+            margin-left: 15%;
+            form{
+                label{
+                    font-weight: bold;
+                    color: #29415F;
+                }
+                a{
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    margin-left: 24%;
+                }
+                input[type="submit"]{
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                }
+                .frgtpass{
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                    
+                }
+            }
+        }
+    }
+
+    #Login_section{
+        .login_box{
+            width: 100%;
+            height: 300px;
+            margin-left: 0%;
+            .login_box_content{
+                position: relative;
+                width: 600px;
+                margin-top: 65px;
+                left: 15%;
+                padding: 0 0px;
+              form{
+                  input[type="submit"]{
+                      margin-top: 10px;
+                      padding: 2px 10px;
+                  }
+              }
+            }
+        }
+    }
+
+    #registration_section{
+        padding: 10px 0;
+        margin-bottom: 50px;
+        .shadow_box{
+            form{
+                .user_type_box{
+                    padding: 10px 20px;
+                    margin-bottom: 20px;
+                    width: 90%;
+                    margin-left: 5%; 
+                    height: 100px;
+                    
+                }
+                .last_date_box{
+                    margin-left: 0%;
+                }
+                #dateInput{
+                    width: 50%;
+                    margin-left: 10%;
+        
+                    transition: .5;                                                                             
+                    opacity: 0;                                                                                    
+                }
+                input[type="submit"],
+                input[type="reset"]{
+                    border-radius: 30px;;
+                }
+            }
+        }
+    }
+
+    #Forgot_password_section{
+        .recovery_box{
+            .recovery_box_content{
+                margin-top: 20px;
+              form{
+                  .warn{
+                      font-size: 18px;
+                      &::after{
+                          top: 12%;
+                      }
+                  }
+                  input[type="submit"]{
+                      margin-left: 10%;
+                  }
+              }
+            }
+        }
+    }
+    
+    //......................................
+    #Profile_section{
+        .shadow_box{
+            .last_date_box{
+                margin-left: 0%;
+                label{
+                font-size: 18px;
+                }
+            }
+            #dateInput{
+                width: 50%;
+                margin-left: 10%;                                                                                    
+            }
+            #date_format{
+                font-size: 16px;
+            }
+          }
+    }
+
+  }
+@media only screen and (max-width: 375px){
+
+    .title{
+        font-size: 22px;
+        i{
+            font-size: 32px;
+        }
+    }
+
+    .First_section{
+        padding-top: 0px;
+        padding-bottom: 0px;
+ 
+        .logo_box{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-left: 39%;
+            margin-bottom: 35px;
+            img{
+                width: 70px;
+                height: 70px;
+                margin-top: 10px;
+            }   
+            h4{
+                font-size: 14px;
+                margin-top: 10px;
+            
+            }
+        }
+        .contact_box{
+            width: 60%;
+            margin-left: 18%;
+            height: 80%;
+            margin-top: 8%;
+            img{
+                width: 45px;
+                height: 25px;
+                margin: 0 10px;
+            }
+        }
+    }
+    #Second_section{
+        background-position: center;
+        .emmergency_search_box{
+            h2{
+                font-size: 20px;
+            }
+            img{
+                width: 210%;
+            }
+            option{
+                font-size: 13px;
+            }
+
+            //............................................
+            .emmergency_search_box_content{
+                .city_box{
+                    label{
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+    //...............................................
+    #Third_section{
+        padding: 50px 0;
+        .abc{
+            height: 325px;
+            width: 90%;
+            margin-left: 5%;
+            background: url(../img/bg1.svg);
+            border-top-right-radius: 0px;
+            box-shadow: 0 10px 25px rgb(214, 209, 209);
+            
+            border-bottom:10px solid #29415F;
+            .ic{
+                i{
+                    margin-top: 50px;
+                    font-size: 30px;
+                }
+            }
+            .title{
+                padding:20px 0;
+                font-size: 20px;
+            }
+            p{
+                padding: 0 20px;
+                color: #29415F;
+                font-size: 14px;
+            }
+            .test{
+                padding-left: 5px;
+            }
+            .emr_title{
+                font-size: 18px;
+            }
+        }
+        .custom_main_box{ 
+            border-bottom: none;
+            padding-bottom: 30px;
+            p{
+                font-size: 16px;
+            }
+          
+        }
+      }
+      #Four_section{
+        .blood_group_descrioption{
+            .blood_info{
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+#Fifth_section{
+
+    .head_box{
+        img{
+            left: 40%;
+        }
+    }
+        .business_card {
+            width: 100%;
+            height: 320px;
+            margin-bottom: 25px;
+            i {
+              padding: 10px;
+              font-size: 16px;
+            }
+            h5 {
+                font-size: 15px;
+                
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+    }
+    #Six_section{
+        h2{
+            font-size: 20px;
+        }
+    }
+    #Seven_section{
+        padding: 50px 0;
+        .down{
+            margin-bottom: 0px;
+        }
+        .feed_back_text{
+            margin-top: 5px;
+            h2 {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                color: #29415F;
+                font-family: 'Merriweather', serif;
+              }
+              p {
+                  text-align: justify;
+                font-size: 17px;
+                color: #29415F;
+              }
+        }
+      
+        .mobile_box{
+            position: relative;
+            width: 96%;
+            height: 300px;
+            margin-left: 3%;
+            padding: 20px;
+        }
+      } 
+      #Blood_bank_section{
+          padding: 0px 0px;
+        .business_card {
+            span{
+                i {
+                    font-size: 10px;
+                    padding: 10px;
+                  }
+            }
+            h5 {
+              font-size: 16px;
+              margin-top: 21px;
+              margin-left: 15px;
+            }
+            p {
+              font-size: 14px;
+              margin-left: 15px;
+            }
+            small{
+                font-size: 14px;
+                margin-left: 15px;
+            }
+          }
+    }
+    
+    #ResultSection{
+        padding: 5px 0;
+       
+        .result_box{
+            padding-top: 10px;
+            width: 96%;
+            height: 165px;
+            margin-left: 2%;
+            margin-bottom: 25px;
+            .picture_box{
+                margin-top: 0px; 
+                width: 40px;
+                height: 40px;
+                i{
+                    font-size: 16px;
+
+                }
+            }
+            .info_box{
+                margin-top: 0px;
+                width: 75%;
+                h4{
+                    font-size: 16px;
+                    
+                }
+                h6{
+                    font-size: 11px;
+                    span{
+                        font-size: 14px;
+                    }
+                }
+                .hideData{
+                    display: none;
+                }
+            }
+        }
+     }
+     #Change_password_section{
+        .update_box{
+            width: 70%;
+            margin-left: 15%;
+            form{
+                a{
+                    margin-top: -5px;
+                    margin-bottom: 20px;
+                    margin-left: 25%;
+                }
+                input[type="submit"]{
+                    margin-top: 25px;
+                    margin-bottom: 0px;
+                    margin-left: 23%;
+                }
+                .frgtpass{
+                    //background: yellow;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    margin-left: 23%;
+                }
+            }
+        }
+    }
+    #Login_section{
+        .login_box{
+            .login_box_content{
+                width: 500px;
+                margin-left: 2%;
+            }
+        }
+    }
+    #registration_section{
+        .shadow_box{
+            form{
+                
+                #dateInput{
+                    width: 70%;                                                                                   
+                }
+            }
+        }
+    }
+    #Forgot_password_section{
+        .recovery_box{
+            .recovery_box_content{
+                width: 90%;
+            left: 5%;;
+                margin-top: 20px;
+              form{
+                  .warn{
+                      font-size: 15px;
+                      &::after{
+                          top: 10%;
+                      }
+                  }
+                  input[type="submit"]{
+                      margin-left: 20%;
+                  }
+              }
+            }
+        }
+    }
+    #Profile_section{
+        .shadow_box{
+            .last_date_box{
+                margin-left: 0%;
+                label{
+                font-size: 17px;
+                }
+            }
+            #dateInput{
+                width: 65%;
+                margin-left: 0%;                                                                                    
+            }
+            #date_format{
+                font-size: 16px;
+            }
+          }
+    }
+}
+@media only screen and (max-width: 320px){
+    .title{
+        font-size: 20px;
+        i{
+            font-size: 28px;
+        }
+    }
+    #Second_section{
+        .emmergency_search_box{
+            option{
+                font-size: 11px;
+            }
+        }
+    }
+    #Third_section{
+        .abc{
+            height: 325px;
+            width: 90%;
+            margin-left: 5%;
+            .ic{
+                i{
+                    margin-top: 50px;
+                    font-size: 30px;
+                }
+            }
+            .title{
+                padding:20px 0;
+                font-size: 18px;
+            }
+            p{
+                padding: 5px 10px;
+
+                font-size: 12px;
+            }
+          .emr_title{
+              font-size: 16px;
+          }
+        }
+        .custom_main_box{ 
+            padding-bottom: 20px;
+          p{
+              font-size: 15px;
+          }
+        }
+        
+      }
+    
+      #Fifth_section{
+        .head_box{
+            img{
+                left: 38%;
+            }
+        }
+        .business_card {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 25px;
+            i {
+              font-size: 16px;
+            }
+            h5 {
+                font-size: 14px;
+                
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+    }
+
+    //.......................................................
+    
+    #Profile_section{
+        img{
+            width: 30px;
+            height: 30px;
+            margin-top: 12px;
+            margin-left: -18%;
+        }
+        .profile_box{
+         height: 360px;
+         button{
+             margin-top: 5px;
+             margin-left: 0px;
+             font-size: 12px;
+         }
+         a{
+             margin-top: 5px;
+             margin-left: 1px;
+             font-size: 12px;
+         }
+         p{
+             font-size: 12px;
+             span{
+                 i{
+                     padding:0 5px;
+                 }
+             }
+         }
+         .hdst{
+             display: none;
+         }
+     }
+         
+     }
+     #Change_password_section{
+        .update_box{
+            form{
+                a{
+                    margin-top: -5px;
+                    margin-bottom: 20px;
+                    margin-left: 23%;
+                }
+                input[type="submit"]{
+                    margin-top: 25px;
+                    margin-bottom: 0px;
+                    margin-left: 20%;
+                }
+                .frgtpass{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+    #Login_section{
+        .login_box{
+            .login_box_content{
+                width: 450px;
+                margin-left: 0%;
+            }
+        }
+    }
+    #registration_section{
+        .shadow_box{
+            form{
+                
+                .last_date_box{
+                    margin-left: 0%;
+                    label{
+                        color: red;
+                        font-size: 16px;
+                    }
+                }
+                #dateInput{
+                    width: 75%;                                                                                 
+                }
+            }
+        }
+    }
+}

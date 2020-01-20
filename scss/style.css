@@ -1,0 +1,2940 @@
+/*.......................................Project Information..................................
+Project: Blood Bank website
+Client: hidden
+Start date: 19/09/19
+End date: 
+Developer: Rifat al mamun
+--------------------------------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Merriweather', serif;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #29415F;
+}
+
+.title i {
+  font-size: 40px;
+  color: #B22626;
+}
+
+.sub_title {
+  text-align: center;
+  color: #607083;
+  margin-top: -15px;
+}
+
+/*...................................................................................................................*/
+/*.................................................INDEX PAGE...................................................*/
+/*.................................................................................................*/
+/*............................................First_section........................................*/
+.First_section {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background: #42060a;
+  background: -webkit-gradient(linear, left bottom, left top, from(#42060a), color-stop(100%, #a40826), to(#130103));
+  background: linear-gradient(0deg, #42060a 0%, #a40826 100%, #130103 100%);
+}
+
+.First_section .logo_box {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.First_section .logo_box img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.First_section .logo_box i {
+  font-size: 100px;
+  color: #ddd;
+}
+
+.First_section .logo_box h4 {
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+}
+
+.First_section .contact_box {
+  width: 80%;
+  margin-left: 20%;
+  height: 80%;
+  margin-top: 5%;
+}
+
+.First_section .contact_box img {
+  width: 45px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.First_section .contact_box p {
+  color: white;
+  font-size: 16px;
+  font-style: bold;
+}
+
+.First_section .third_part .globe {
+  color: #fff;
+  position: absolute;
+  left: -200px;
+  top: 100px;
+  font-size: 50px;
+  color: #ddd;
+}
+
+.First_section .third_part a {
+  background: #8f041b;
+  background: #9e0606;
+  padding: 5px 30px;
+  color: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.First_section .third_part a i {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.First_section .third_part .hide {
+  display: none;
+}
+
+.First_section .third_part p {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.First_section nav .web_name {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  font-size: 16px;
+  top: 20px;
+  left: 70px;
+}
+
+.First_section nav .first_nav_item {
+  background: white;
+  border-radius: 30px;
+  border-right: 1px solid #fff;
+  padding: 0 50px;
+}
+
+.First_section nav .first_nav_item li {
+  padding: 5px 15px;
+}
+
+.First_section nav .first_nav_item li:focus {
+  border: none;
+}
+
+.First_section nav .first_nav_item li a {
+  position: relative;
+  color: #960808;
+}
+
+.First_section nav .first_nav_item li a i {
+  font-size: 15px;
+}
+
+.First_section nav .first_nav_item li a:focus {
+  border: none;
+}
+
+.First_section nav .first_nav_item li:hover a {
+  color: #f70e0e;
+}
+
+.First_section nav .first_nav_item .sinsm {
+  display: none;
+}
+
+.First_section nav .second_nav_item {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+
+.First_section nav .second_nav_item li a {
+  color: #960808;
+}
+
+/*.................................................................................................*/
+/*SECOND SECTION START HERE.........................................................................*/
+#Second_section {
+  font-family: 'Merriweather', serif;
+  padding: 50px 0;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 248, 248, 0.6)), to(rgba(250, 250, 252, 0.6))), url(../img/blood.svg);
+  background: linear-gradient(rgba(248, 248, 248, 0.6), rgba(250, 250, 252, 0.6)), url(../img/blood.svg);
+  background-repeat: repeat;
+}
+
+#Second_section .drop {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 1em;
+  border-top-right-radius: .2em;
+  -webkit-animation: droping 2s linear infinite;
+          animation: droping 2s linear infinite;
+}
+
+#Second_section .drop:nth-child(2) {
+  left: 12%;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+#Second_section .drop:nth-child(3) {
+  left: 14%;
+  -webkit-animation-delay: .12s;
+          animation-delay: .12s;
+}
+
+#Second_section .drop:nth-child(4) {
+  left: 16%;
+  -webkit-animation-delay: .18s;
+          animation-delay: .18s;
+}
+
+@-webkit-keyframes droping {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(0) rotate(-40deg);
+            transform: translateY(0) rotate(-40deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(350px) rotate(-40deg);
+            transform: translateY(350px) rotate(-40deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes droping {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateY(0) rotate(-40deg);
+            transform: translateY(0) rotate(-40deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(350px) rotate(-40deg);
+            transform: translateY(350px) rotate(-40deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#Second_section .round {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: #522546;
+  top: -31px;
+  right: -1119px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+#Second_section .round i {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  color: #fff;
+  font-size: 25px;
+}
+
+#Second_section .round p {
+  position: absolute;
+  top: 38px;
+  left: 34px;
+  color: #fff;
+  padding: 0px;
+  margin: 0;
+  font-size: 20px;
+}
+
+#Second_section .round span {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 70px;
+  left: 45px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#Second_section .img_back {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+#Second_section .emmergency_search_box {
+  z-index: 1;
+  position: relative;
+  width: 70%;
+  height: 300px;
+  margin-left: 15%;
+  background: #FCFCFD;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+  overflow: hidden;
+}
+
+#Second_section .emmergency_search_box img {
+  position: absolute;
+  top: -140px;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
+}
+
+#Second_section .emmergency_search_box h2 {
+  padding-top: 30px;
+  font-size: 30px;
+  color: #29415F;
+  color: #3f0cf5;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+#Second_section .emmergency_search_box h2 span {
+  color: #B22626;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content {
+  position: relative;
+  width: 100%;
+  margin-top: 45px;
+  left: 0;
+  z-index: 100;
+  padding: 0 15px;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content .blood_box {
+  position: relative;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content .blood_box label {
+  font-weight: bold;
+  color: #29415F;
+  font-size: 18px;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content .blood_box i {
+  position: absolute;
+  color: #960d0d;
+  font-size: 20px;
+  top: 5px;
+  left: 60px;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content .city_box label {
+  font-weight: bold;
+  color: #29415F;
+  font-size: 18px;
+  margin-left: 17px;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content .city_box i {
+  position: absolute;
+  color: #960d0d;
+  font-size: 20px;
+  top: 5px;
+  left: 75px;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content a {
+  background: #B22626;
+  color: #fff;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content input[type="submit"] {
+  background: #B22626;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 20px 0px 20px 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_content input[type="submit"]:hover {
+  border-radius: 0px 20px 0px 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #29415F;
+  background: #673efd;
+}
+
+#Second_section .emmergency_search_box .emmergency_search_box_footer {
+  position: absolute;
+  top: -427px;
+  left: 0;
+  width: 100%;
+}
+
+#Second_section .fixed_icon {
+  cursor: pointer;
+  background: #89081E;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 30px;
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  bottom: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+/*.................................................................................................*/
+/*THIRD SECTION START HERE.....................................................................*/
+#Third_section {
+  font-family: 'Merriweather', serif;
+  padding: 50px 0;
+  background: #FCFCFD;
+}
+
+#Third_section .abc {
+  position: relative;
+  height: 300px;
+  width: 80%;
+  margin-left: 0%;
+  background: url(../img/bg1.svg);
+  border-top-right-radius: 300px;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+  border-bottom: 10px solid #29415F;
+}
+
+#Third_section .abc .ic i {
+  color: #B22626;
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+  -webkit-animation: sake 4s linear infinite;
+          animation: sake 4s linear infinite;
+}
+
+@-webkit-keyframes sake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -20px;
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -10px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0px;
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 10px;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 20px;
+  }
+}
+
+@keyframes sake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -20px;
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -10px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0px;
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 10px;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 20px;
+  }
+}
+
+#Third_section .abc .emr_title {
+  padding: 20px 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #29415F;
+}
+
+#Third_section .abc p {
+  padding: 0 30px;
+  color: #29415F;
+  font-size: 17px;
+}
+
+#Third_section .abc .test {
+  padding-left: 100px;
+}
+
+#Third_section .abc .test p {
+  color: #29415F;
+}
+
+#Third_section .abc .test i {
+  color: #29415F;
+  font-weight: bold;
+}
+
+#Third_section .custom_main_box {
+  position: relative;
+  padding-bottom: 30px;
+  margin-top: 25px;
+}
+
+#Third_section .custom_main_box::after {
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 3px;
+  bottom: 9%;
+  left: 30%;
+  background: #29415f;
+  -webkit-animation: anim_one 4s linear infinite;
+          animation: anim_one 4s linear infinite;
+}
+
+#Third_section .custom_main_box::before {
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 3px;
+  bottom: 13%;
+  left: 30%;
+  background: #29415f;
+  -webkit-animation: anim_two 4s linear infinite;
+          animation: anim_two 4s linear infinite;
+}
+
+@-webkit-keyframes anim_one {
+  0% {
+    width: 40%;
+    left: 30%;
+  }
+  50% {
+    width: 10%;
+    left: 45%;
+  }
+  100% {
+    width: 40%;
+    left: 30%;
+  }
+}
+
+@keyframes anim_one {
+  0% {
+    width: 40%;
+    left: 30%;
+  }
+  50% {
+    width: 10%;
+    left: 45%;
+  }
+  100% {
+    width: 40%;
+    left: 30%;
+  }
+}
+
+@-webkit-keyframes anim_two {
+  0% {
+    width: 10%;
+    left: 45%;
+  }
+  50% {
+    width: 40%;
+    left: 30%;
+  }
+  100% {
+    width: 10%;
+    left: 45%;
+  }
+}
+
+@keyframes anim_two {
+  0% {
+    width: 10%;
+    left: 45%;
+  }
+  50% {
+    width: 40%;
+    left: 30%;
+  }
+  100% {
+    width: 10%;
+    left: 45%;
+  }
+}
+
+#Third_section .custom_main_box img {
+  position: relative;
+  margin-right: -1000px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  padding: 20px;
+}
+
+#Third_section .custom_main_box i {
+  font-size: 85px;
+  color: #B22626;
+}
+
+#Third_section .custom_main_box p {
+  color: #29415F;
+}
+
+/*.................................................................................................*/
+/*FOURTH SECTION START HERE.......................................................................*/
+#Four_section {
+  position: relative;
+  padding: 50px 0;
+  background: #FCFCFD;
+}
+
+#Four_section .blood_group_descrioption {
+  width: 100%;
+  margin-top: 20px;
+  padding: 1px;
+  background: #f0f2fd;
+  border: none;
+  padding: 5px;
+}
+
+#Four_section .blood_group_descrioption .card {
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+}
+
+#Four_section .blood_group_descrioption .blood_info {
+  background: #f0f2fd;
+  height: 250px;
+}
+
+#Four_section .blood_group_descrioption .blood_info h4 {
+  text-align: center;
+  position: relative;
+  margin: 5px 0;
+  color: #B22626;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#Four_section .blood_group_descrioption .blood_info h4::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 3px;
+  background: #29415F;
+  bottom: -7px;
+  left: 10%;
+}
+
+#Four_section .blood_group_descrioption .blood_info p {
+  padding: 7px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+#Four_section .blood_group_descrioption .blood_info .percent, #Four_section .blood_group_descrioption .blood_info .status {
+  font-size: 16px;
+  margin: 0;
+  padding: 1px 5px;
+  text-align: center;
+}
+
+#Four_section .blood_group_descrioption .blood_info .percent span, #Four_section .blood_group_descrioption .blood_info .status span {
+  color: #B22626;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*FIFTH SECTION START HERE.....................................................................*/
+#Fifth_section {
+  padding: 50px 0;
+  background: #FCFCFD;
+}
+
+#Fifth_section .business_card {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  border-top: 12px solid #B22626;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Fifth_section .business_card i {
+  display: block;
+  background: #B22626;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+#Fifth_section .business_card h5 {
+  font-size: 18px;
+  color: #29415F;
+  font-weight: bold;
+}
+
+#Fifth_section .business_card h5 strong {
+  color: #B22626;
+}
+
+#Fifth_section .business_card p {
+  color: #343a40;
+  font-size: 17px;
+}
+
+#Fifth_section .business_card p strong {
+  color: green;
+}
+
+#Fifth_section .business_card:hover {
+  height: 300px;
+  background: #f5f7fa;
+  -webkit-box-shadow: 1px 1px 40px 1px #ddd;
+          box-shadow: 1px 1px 40px 1px #ddd;
+  border-radius: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#Fifth_section .business_card:hover h5, #Fifth_section .business_card:hover p {
+  color: #000;
+}
+
+#Fifth_section .business_card:hover i {
+  background: #fff;
+  color: #B22626;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#Fifth_section a {
+  margin-top: 20px;
+  background: #6d48f1;
+  color: #fff;
+}
+
+/*.................................................................................................*/
+/*SIX SECTION START HERE.....................................................................*/
+#Six_section {
+  padding: 50px 0;
+  background: #FCFCFD;
+}
+
+#Six_section .our_instruction {
+  margin-top: 50px;
+  width: 90%;
+  margin-left: 5%;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+  color: #29415F;
+  text-align: justify;
+}
+
+#Six_section .our_instruction ul {
+  list-style: none;
+  padding: 50px 0;
+}
+
+#Six_section .our_instruction ul li {
+  padding: 0 50px;
+}
+
+#Six_section .our_instruction ul li p i {
+  color: #B22626;
+  font-weight: bold;
+  font-size: 22px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Six_section .our_instruction .our_tips {
+  text-align: center;
+}
+
+#Six_section .our_instruction .our_tips i {
+  font-size: 25px;
+  color: #fffb02;
+  background: #6D48F1;
+  padding: 20px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Six_section .our_instruction .our_tips i:hover {
+  color: #ffffff;
+  background: #2b2e4a;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Six_section .our_instruction .our_tips p {
+  font-size: 18px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Six_section .our_instruction:hover .fa-arrow-circle-up {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*.................................................................................................*/
+/*SEVEN SECTION START HERE.........................................................................*/
+#Seven_section {
+  position: relative;
+  background: #FCFCFD;
+  padding: 50px 0;
+}
+
+#Seven_section .down {
+  margin-bottom: 50px;
+}
+
+#Seven_section .feed_back_text {
+  margin-top: 55px;
+}
+
+#Seven_section .feed_back_text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #29415F;
+  font-family: 'Merriweather', serif;
+}
+
+#Seven_section .feed_back_text p {
+  font-size: 18px;
+  color: #29415F;
+}
+
+#Seven_section .mobile_box {
+  position: relative;
+  background: white;
+  width: 96%;
+  height: 300px;
+  margin-left: 3%;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+  padding: 20px;
+}
+
+#Seven_section .mobile_box .form-group label {
+  font-weight: bold;
+  color: #29415F;
+  padding: 0;
+  margin: 0;
+}
+
+/*...................................................................................................................*/
+/*.................................................BLOOD BANK PAGE...................................................*/
+#Blood_bank_section {
+  position: relative;
+  padding: 50px 0;
+  background: #fff;
+}
+
+#Blood_bank_section .business_card {
+  margin-top: 20px;
+  width: 94%;
+  height: 300px;
+  background: #fff;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  border-top: 12px solid #B22626;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Blood_bank_section .business_card span i {
+  display: block;
+  background: #B22626;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+#Blood_bank_section .business_card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #29415F;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 21px;
+  margin-left: 100px;
+}
+
+#Blood_bank_section .business_card p {
+  color: #29415F;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-top: 13px;
+}
+
+#Blood_bank_section .business_card p i {
+  color: #29415F;
+}
+
+#Blood_bank_section .business_card small {
+  font-size: 14px;
+  margin-left: 100px;
+  color: #29415F;
+}
+
+#Blood_bank_section .business_card:hover {
+  background: #faf4ea;
+  -webkit-box-shadow: 1px 1px 40px 1px #ddd;
+          box-shadow: 1px 1px 40px 1px #ddd;
+  border-radius: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#Blood_bank_section .business_card:hover h5 {
+  color: #000;
+}
+
+/*...................................................................................................................*/
+/*.................................................Facts PAGE...................................................*/
+#Fact_section {
+  position: relative;
+  padding: 50px 0;
+  background: #FBFBFB;
+}
+
+#Fact_section .first_facts_card {
+  border-top: 12px solid #B22626;
+}
+
+#Fact_section .facts_card {
+  margin-top: 20px;
+  width: 94%;
+  background: #fff;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+#Fact_section .facts_card .hide_facts_icon {
+  display: block;
+}
+
+#Fact_section .facts_card span i {
+  display: block;
+  background: #6D48F1;
+  color: #FFFB02;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+#Fact_section .facts_card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #29415F;
+  font-size: 20px;
+  margin-top: 21px;
+  margin-left: 100px;
+}
+
+#Fact_section .facts_card p {
+  color: #29415F;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: 13px;
+}
+
+#Fact_section .facts_card p i {
+  color: #29415F;
+}
+
+#Fact_section .facts_card small {
+  font-size: 14px;
+  margin-left: 100px;
+  color: #29415F;
+}
+
+/*...................................................................................................................*/
+/*.................................................SEARCH DONOR PAGE................................................*/
+#clickSection {
+  padding: 30px 0;
+  position: relative;
+}
+
+#clickSection span img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -50px;
+}
+
+#clickSection p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+  color: #29415F;
+}
+
+#clickSection button {
+  position: absolute;
+  background: #500574;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  top: 2px;
+  right: 0;
+}
+
+#ResultSection {
+  padding: 5px 0;
+  position: relative;
+}
+
+#ResultSection .result_box {
+  padding-top: 15px;
+  position: relative;
+  width: 80%;
+  height: 200px;
+  background: #fff;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  border-top: 12px solid #B22626;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#ResultSection .result_box .picture_box {
+  position: absolute;
+  margin-top: 10px;
+  width: 110px;
+  height: 110px;
+  background: #6D48F1;
+  border-radius: 50%;
+}
+
+#ResultSection .result_box .picture_box i {
+  position: absolute;
+  top: 34%;
+  left: 26%;
+  font-size: 40px;
+  color: #FFFB02;
+}
+
+#ResultSection .result_box .info_box {
+  position: absolute;
+  margin-top: 10px;
+  width: 72%;
+  height: 80%;
+  right: 0;
+}
+
+#ResultSection .result_box .info_box h4 {
+  font-weight: bold;
+  color: #29415F;
+}
+
+#ResultSection .result_box .info_box h6 span {
+  color: #B22626;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*...................................................................................................................*/
+/*..............................................REGISTRATION PAGE...................................................*/
+#registration_section {
+  font-family: 'Merriweather', serif;
+  padding: 50px 0;
+  background: #fff;
+}
+
+#registration_section .shadow_box {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: white;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+  border-top: 10px solid #B22626;
+}
+
+#registration_section .shadow_box form {
+  position: relative;
+}
+
+#registration_section .shadow_box form .user_type_box {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  margin-left: 20%;
+  height: 100px;
+  background: #F0F2FD;
+  color: #110a0a;
+}
+
+#registration_section .shadow_box form label {
+  font-weight: bold;
+}
+
+#registration_section .shadow_box form label .format {
+  color: #878788;
+}
+
+#registration_section .shadow_box form .test_height {
+  overflow: hidden;
+}
+
+#registration_section .shadow_box form .last_date_box {
+  margin-left: 30%;
+}
+
+#registration_section .shadow_box form .last_date_box label {
+  color: red;
+  font-size: 18px;
+}
+
+#registration_section .shadow_box form #dateInput {
+  width: 30%;
+  margin-left: 10%;
+  -webkit-transition: .5;
+  transition: .5;
+  opacity: 0;
+}
+
+#registration_section .shadow_box form input[type="submit"],
+#registration_section .shadow_box form input[type="reset"] {
+  border-radius: 30px;
+}
+
+#registration_section .shadow_box form #date_format {
+  color: #b90606;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+/*...................................................................................................................*/
+/*..................................................LOGIN PAGE.......................................................*/
+#Login_section {
+  padding: 50px 0;
+  font-family: 'Merriweather', serif;
+}
+
+#Login_section .login_box {
+  border-top: 10px solid #B22626;
+  background: red;
+  z-index: 1;
+  position: relative;
+  background: white;
+  width: 70%;
+  height: 350px;
+  margin-left: 15%;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Login_section .login_box .login_box_content {
+  position: relative;
+  width: 100%;
+  margin-top: 65px;
+  left: 24%;
+  z-index: 100;
+  padding: 0 15px;
+}
+
+#Login_section .login_box .login_box_content form input[type="submit"] {
+  margin-top: 10px;
+  background: #29415F;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+/*...................................................................................................................*/
+/*..................................................Forgot password PAGE.......................................................*/
+#Forgot_password_section {
+  padding: 50px 0;
+  font-family: 'Merriweather', serif;
+}
+
+#Forgot_password_section .recovery_box {
+  border-top: 10px solid #B22626;
+  z-index: 1;
+  position: relative;
+  background: white;
+  width: 100%;
+  margin-left: 0%;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content {
+  text-align: left;
+  position: relative;
+  width: 60%;
+  margin-top: 65px;
+  left: 20%;
+  z-index: 100;
+  padding: 0 15px;
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content form .warn {
+  color: #c41e1e;
+  font-size: 23px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content form .warn::after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 3px;
+  top: 9%;
+  left: 0;
+  background: #29415f;
+  -webkit-animation: anim_up_down_one 4s linear infinite;
+          animation: anim_up_down_one 4s linear infinite;
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content form .warn::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 3px;
+  top: 11%;
+  left: 0;
+  background: #29415f;
+  -webkit-animation: anim_up_down_two 4s linear infinite;
+          animation: anim_up_down_two 4s linear infinite;
+}
+
+@-webkit-keyframes anim_up_down_one {
+  0% {
+    width: 200px;
+    left: 0;
+  }
+  50% {
+    width: 25px;
+    left: 75px;
+  }
+  100% {
+    width: 200px;
+    left: 0;
+  }
+}
+
+@keyframes anim_up_down_one {
+  0% {
+    width: 200px;
+    left: 0;
+  }
+  50% {
+    width: 25px;
+    left: 75px;
+  }
+  100% {
+    width: 200px;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes anim_up_down_two {
+  0% {
+    width: 25px;
+    left: 75px;
+  }
+  50% {
+    width: 200px;
+    left: 0;
+  }
+  100% {
+    width: 25px;
+    left: 75px;
+  }
+}
+
+@keyframes anim_up_down_two {
+  0% {
+    width: 25px;
+    left: 75px;
+  }
+  50% {
+    width: 200px;
+    left: 0;
+  }
+  100% {
+    width: 25px;
+    left: 75px;
+  }
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content form label {
+  text-align: left;
+}
+
+#Forgot_password_section .recovery_box .recovery_box_content form input[type="submit"] {
+  margin-top: 10px;
+  background: #29415F;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 30px;
+  margin-left: 33%;
+}
+
+/*.................................................................................................................*/
+/*.................................................PROFILE PAGE.................................................*/
+#Profile_section {
+  position: relative;
+  padding: 40px 0;
+  font-family: 'Merriweather', serif;
+  background: #F8F9FA;
+}
+
+#Profile_section img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 25%;
+}
+
+#Profile_section .profile_box {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  margin-top: 10px;
+  background: #fff;
+  margin-left: 5%;
+  margin-bottom: 25px;
+  border-radius: 2px;
+  border-top: 12px solid #B22626;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Profile_section .profile_box button {
+  margin-top: 15px;
+  margin-left: 12px;
+  background: #6D48F1;
+  color: white;
+}
+
+#Profile_section .profile_box a {
+  margin-top: 15px;
+  margin-left: 13px;
+  background: #d44013;
+  color: white;
+}
+
+#Profile_section .profile_box p {
+  color: #29415F;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+#Profile_section .profile_box p span i {
+  color: #B22626;
+  padding: 0px 15px;
+}
+
+#Profile_section .shadow_box {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: white;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 25px #d6d1d1;
+          box-shadow: 0 10px 25px #d6d1d1;
+}
+
+#Profile_section .shadow_box label {
+  font-weight: bold;
+}
+
+#Profile_section .shadow_box .last_date_box {
+  margin-left: 30%;
+}
+
+#Profile_section .shadow_box .last_date_box label {
+  color: red;
+  font-size: 18px;
+}
+
+#Profile_section .shadow_box #dateInput {
+  width: 50%;
+  margin-left: 10%;
+  -webkit-transition: .5;
+  transition: .5;
+  opacity: 0;
+}
+
+#Profile_section .shadow_box input[type="submit"],
+#Profile_section .shadow_box input[type="reset"] {
+  border-radius: 30px;
+}
+
+#Profile_section .shadow_box #date_format {
+  color: #b90606;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+/*...................................................................................................................*/
+/*...............................................CHANGE PASSWORD PAGE................................................*/
+#Change_password_section {
+  font-family: 'Merriweather', serif;
+}
+
+#Change_password_section .update_box {
+  width: 70%;
+  margin-left: 15%;
+}
+
+#Change_password_section .update_box form label {
+  font-weight: bold;
+  color: #29415F;
+}
+
+#Change_password_section .update_box form a {
+  border-radius: 30px;
+  background: #007BFF;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0%;
+}
+
+#Change_password_section .update_box form input[type="submit"] {
+  background: #6D48F1;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 0%;
+}
+
+#Change_password_section .update_box form .frgtpass {
+  background: #b32b01;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 0%;
+}
+
+/*...................................................................................................................*/
+/*.................................................FOOTER...................................................*/
+#footer_section {
+  font-family: 'Merriweather', serif;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background: #42060a;
+  background: -webkit-gradient(linear, left bottom, left top, from(#42060a), color-stop(100%, #a40826), to(#130103));
+  background: linear-gradient(0deg, #42060a 0%, #a40826 100%, #130103 100%);
+}
+
+#footer_section ul {
+  display: block;
+}
+
+#footer_section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer_section .con h5 {
+  text-align: center;
+}
+
+#footer_section .con p {
+  text-align: center;
+}
+
+#footer_section .con p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer_section .developer {
+  color: #fff;
+}
+
+#footer_section .developer h4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#footer_section .developer h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#footer_section .developer p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#footer_section .contributor {
+  color: #fff;
+}
+
+#footer_section .contributor h4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#footer_section .contributor h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#footer_section .contributor p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#footer_section .hide_contributor_for_lg {
+  display: none;
+}
+
+#footer_section .hide_contributor_for_sm {
+  display: block;
+}
+
+/*.................................................................................................*/
+/*RESPONSIVE CODE START HERE.....................................................................*/
+/*.................................................................................................*/
+@media only screen and (max-width: 1024px) {
+  #Four_section .blood_group_descrioption .blood_info .mtTop {
+    display: block;
+    margin-top: 36px;
+  }
+  .First_section {
+    padding-bottom: 20px;
+  }
+  #Second_section {
+    background-position: center;
+  }
+  #Second_section .emmergency_search_box img {
+    width: 120%;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box i {
+    left: 35px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box i {
+    left: 50px;
+  }
+  #Third_section {
+    padding: 50px 0;
+  }
+  #Third_section .abc {
+    width: 90%;
+  }
+  #Third_section .abc .title {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  #Fifth_section .business_card {
+    height: 320px;
+  }
+  #Six_section .our_instruction ul li p {
+    font-size: 18px;
+  }
+  #Six_section .our_instruction .our_tips p {
+    font-size: 17px;
+  }
+  #Blood_bank_section img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -80px;
+    left: 46%;
+  }
+  #Blood_bank_section .business_card {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+  #Blood_bank_section .business_card i {
+    display: block;
+    background: #770707;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  #Blood_bank_section .business_card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 21px;
+    margin-left: 50px;
+  }
+  #Blood_bank_section .business_card p {
+    color: #343a40;
+    font-size: 15px;
+    margin-left: 58px;
+    margin-top: 13px;
+  }
+  #Blood_bank_section .business_card small {
+    font-size: 14px;
+    margin-left: 58px;
+  }
+  #Blood_bank_section .business_card:hover {
+    width: 100%;
+    height: 300px;
+    background: #faf4ea;
+    margin-left: 0%;
+    -webkit-box-shadow: 1px 1px 40px 1px #ddd;
+            box-shadow: 1px 1px 40px 1px #ddd;
+    border-radius: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #Profile_section img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 22%;
+  }
+  #clickSection span img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .First_section {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .First_section .logo_box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .First_section .logo_box img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .First_section .contact_box {
+    width: 70%;
+    margin-left: 20%;
+    height: 80%;
+    margin-top: 5%;
+  }
+  .First_section .contact_box img {
+    width: 45px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  .First_section .contact_box p {
+    font-size: 16px;
+  }
+  .First_section .third_part a {
+    padding: 5px 40px;
+    margin-bottom: 18px;
+  }
+  .First_section .third_part p {
+    font-size: 15px;
+  }
+  .First_section nav {
+    margin-top: 0px;
+  }
+  .First_section nav .first_nav_item {
+    border-radius: 30px;
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+  }
+  .First_section nav .first_nav_item li {
+    padding: 0px 15px;
+  }
+  .First_section nav .first_nav_item .sinsm {
+    display: block;
+  }
+  .First_section nav .first_nav_item .sinlg {
+    display: none;
+  }
+  .First_section nav .second_nav_item {
+    padding: 0 10px;
+  }
+  .First_section nav .second_nav_item li {
+    padding: 0px 5px;
+  }
+  .First_section nav .second_nav_item .nav_divider {
+    background: #cdcbe2;
+  }
+  #Second_section {
+    background-position: center;
+  }
+  #Second_section .round {
+    display: none;
+  }
+  #Second_section .emmergency_search_box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #Second_section .emmergency_search_box h2 {
+    font-size: 25px;
+  }
+  #Second_section .emmergency_search_box img {
+    width: 110%;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box label {
+    font-size: 16px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box select option {
+    font-size: 10px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box i {
+    left: 20px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box label {
+    font-size: 16px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box i {
+    left: 33px;
+  }
+  #Third_section .abc {
+    position: relative;
+    height: 300px;
+    width: 86%;
+    margin-left: 7%;
+    background: url(../img/bg1.svg);
+    border-top-right-radius: 300px;
+    -webkit-box-shadow: 0 10px 25px #d6d1d1;
+            box-shadow: 0 10px 25px #d6d1d1;
+    border-bottom: 10px solid #29415F;
+  }
+  #Third_section .abc .ic i {
+    color: #B22626;
+    font-size: 40px;
+  }
+  #Third_section .abc .title {
+    padding: 20px 0;
+    font-family: 'Lobster', cursive;
+    color: #29415F;
+  }
+  #Third_section .abc p {
+    padding: 0 100px;
+    color: #29415F;
+    font-size: 17px;
+  }
+  #Third_section .abc .test {
+    padding-left: 35px;
+  }
+  #Third_section .abc .emr_title {
+    font-size: 22px;
+  }
+  #Third_section .custom_main_box {
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+  #Third_section .custom_main_box img {
+    margin-top: 0px;
+    width: 120px;
+    height: 120px;
+  }
+  /*FOURTH SECTION START HERE.....................................................................*/
+  #Four_section .blood_group_descrioption .blood_info {
+    height: 200px;
+  }
+  #Four_section .blood_group_descrioption .blood_info h4 {
+    font-size: 30px;
+  }
+  #Four_section .blood_group_descrioption .blood_info p {
+    font-size: 15px;
+  }
+  #Four_section .blood_group_descrioption .blood_info .mtTop {
+    margin-top: 0px;
+  }
+  #Fifth_section .business_card {
+    height: 250px;
+  }
+  #Fifth_section .head_box img {
+    left: 44%;
+  }
+  #Six_section .our_instruction .our_tips span i {
+    padding: 15px;
+  }
+  #Six_section .our_instruction .our_tips p {
+    font-size: 16px;
+    padding: 0px 5px;
+  }
+  #Seven_section .down {
+    margin-bottom: 40px;
+  }
+  #Seven_section h5 {
+    font-size: 22px;
+  }
+  #Seven_section p {
+    font-size: 16px;
+  }
+  #Seven_section .mobile_box {
+    width: 400px;
+    height: 350px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  #Seven_section .mobile_box .mobile_content {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    padding: 0 15px;
+  }
+  /*.................................................FOOTER...................................................*/
+  #footer_section {
+    font-family: 'Merriweather', serif;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    background: #42060a;
+    background: -webkit-gradient(linear, left bottom, left top, from(#42060a), color-stop(100%, #a40826), to(#130103));
+    background: linear-gradient(0deg, #42060a 0%, #a40826 100%, #130103 100%);
+  }
+  #footer_section .developer h4 {
+    font-size: 17px;
+  }
+  #footer_section .developer h5 {
+    font-size: 16px;
+  }
+  #footer_section .developer p {
+    font-size: 15px;
+  }
+  #footer_section .contributor {
+    margin-top: 50px;
+  }
+  #footer_section .contributor h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #footer_section .contributor h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #footer_section .contributor p {
+    font-size: 13px;
+  }
+  #Blood_bank_section img {
+    left: 43%;
+  }
+  #Blood_bank_section .business_card {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+  #Blood_bank_section .business_card h5 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+  #Blood_bank_section .business_card p {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-top: 13px;
+  }
+  #Blood_bank_section .business_card small {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  /*...................................................................................................................*/
+  /*.................................................SEARCH DONOR PAGE................................................*/
+  #clickSection {
+    position: relative;
+    padding: 30px 0;
+  }
+  #clickSection p {
+    font-size: 22px;
+  }
+  #clickSection button {
+    padding: 6px 16px;
+  }
+  #ResultSection {
+    padding: 5px 0;
+  }
+  #ResultSection .result_box {
+    padding-top: 15px;
+    width: 96%;
+    height: 165px;
+    margin-left: 2%;
+    margin-bottom: 25px;
+  }
+  #ResultSection .result_box .picture_box {
+    margin-top: 10px;
+    width: 75px;
+    height: 75px;
+  }
+  #ResultSection .result_box .picture_box i {
+    position: absolute;
+    top: 34%;
+    left: 24%;
+    font-size: 34px;
+    color: #FFFB02;
+  }
+  #ResultSection .result_box .info_box {
+    margin-top: 10px;
+    width: 75%;
+  }
+  #ResultSection .result_box .info_box h4 {
+    font-size: 18px;
+  }
+  #ResultSection .result_box .info_box h6 {
+    font-size: 13px;
+  }
+  #Profile_section img {
+    margin-left: -5%;
+  }
+  #Profile_section .profile_box {
+    width: 100%;
+    height: 320px;
+    margin-left: 0%;
+  }
+  #Profile_section .profile_box button {
+    margin-top: 32px;
+    margin-left: 12px;
+  }
+  #Profile_section .profile_box a {
+    margin-top: 32px;
+    margin-left: 13px;
+  }
+  #Profile_section .profile_box p {
+    font-size: 16px;
+  }
+  #Profile_section .profile_box p span i {
+    padding: 0px 15px;
+  }
+  #Profile_section .profile_box p strong {
+    display: none;
+  }
+  #Login_section .login_box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #Login_section .login_box .login_box_content {
+    position: relative;
+    width: 100%;
+    left: 24%;
+  }
+  #registration_section .shadow_box form #dateInput {
+    width: 50%;
+  }
+  #Forgot_password_section .recovery_box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content {
+    width: 60%;
+    margin-top: 65px;
+    left: 20%;
+    padding: 0 15px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn {
+    color: #c41e1e;
+    font-size: 23px;
+    margin-bottom: 50px;
+    display: block;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 3px;
+    top: 9%;
+    left: 0;
+    background: #29415f;
+    -webkit-animation: anim_up_down_one 4s linear infinite;
+            animation: anim_up_down_one 4s linear infinite;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 3px;
+    top: 11%;
+    left: 0;
+    background: #29415f;
+    -webkit-animation: anim_up_down_two 4s linear infinite;
+            animation: anim_up_down_two 4s linear infinite;
+  }
+  @-webkit-keyframes anim_up_down_one {
+    0% {
+      width: 200px;
+      left: 0;
+    }
+    50% {
+      width: 25px;
+      left: 75px;
+    }
+    100% {
+      width: 200px;
+      left: 0;
+    }
+  }
+  @keyframes anim_up_down_one {
+    0% {
+      width: 200px;
+      left: 0;
+    }
+    50% {
+      width: 25px;
+      left: 75px;
+    }
+    100% {
+      width: 200px;
+      left: 0;
+    }
+  }
+  @-webkit-keyframes anim_up_down_two {
+    0% {
+      width: 25px;
+      left: 75px;
+    }
+    50% {
+      width: 200px;
+      left: 0;
+    }
+    100% {
+      width: 25px;
+      left: 75px;
+    }
+  }
+  @keyframes anim_up_down_two {
+    0% {
+      width: 25px;
+      left: 75px;
+    }
+    50% {
+      width: 200px;
+      left: 0;
+    }
+    100% {
+      width: 25px;
+      left: 75px;
+    }
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form input[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 20px;
+    margin-left: 33%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 25px;
+  }
+  .title i {
+    font-size: 38px;
+  }
+  .sub_title {
+    margin-top: -15px;
+  }
+  .First_section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .First_section .logo_box {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 42%;
+    margin-bottom: 35px;
+  }
+  .First_section .logo_box img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .First_section .logo_box h4 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .First_section .contact_box {
+    width: 70%;
+    margin-left: 22%;
+    margin-top: 2%;
+  }
+  .First_section .contact_box img {
+    width: 35px;
+    height: 20px;
+    margin: 0 10px;
+  }
+  .First_section .contact_box p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .First_section .third_part a {
+    padding: 1px 25px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 18px;
+  }
+  .First_section .third_part .hide {
+    display: block;
+    width: 25%;
+    margin-left: 37%;
+    padding: 0px 0;
+    margin-top: -15px;
+  }
+  .First_section .third_part p {
+    font-size: 15px;
+    display: none;
+  }
+  .First_section nav {
+    margin-top: 0px;
+  }
+  .First_section nav .first_nav_item {
+    background: none;
+    border-radius: 5px;
+    border-right: none;
+    padding: 0 20px;
+  }
+  .First_section nav .first_nav_item li {
+    padding: 0px 15px;
+  }
+  .First_section nav .first_nav_item li a {
+    color: #fff;
+  }
+  .First_section nav .first_nav_item li a i {
+    display: none;
+  }
+  .First_section nav .second_nav_item {
+    display: none;
+    background: none;
+    padding: 0 10px;
+  }
+  .First_section nav .second_nav_item li {
+    padding: 0px 5px;
+  }
+  .First_section nav .second_nav_item li a {
+    color: #fff;
+  }
+  #Second_section {
+    background-position: center;
+  }
+  #Second_section .emmergency_search_box {
+    width: 100%;
+    margin-left: 0%;
+  }
+  #Second_section .emmergency_search_box h2 {
+    font-size: 22px;
+  }
+  #Second_section .emmergency_search_box img {
+    width: 170%;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box label {
+    font-size: 14px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .blood_box i {
+    left: -10px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box label {
+    font-size: 14px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box i {
+    left: 5px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content option {
+    font-size: 13px;
+  }
+  #Second_section .emmergency_search_box input[type="submit"] {
+    font-size: 13px;
+  }
+  #Third_section {
+    padding: 50px 0;
+  }
+  #Third_section .abc {
+    height: 350px;
+    width: 90%;
+    margin-left: 5%;
+    background: url(../img/bg1.svg);
+    border-top-right-radius: 0px;
+    -webkit-box-shadow: 0 10px 25px #d6d1d1;
+            box-shadow: 0 10px 25px #d6d1d1;
+    border-bottom: 9px solid #29415F;
+  }
+  #Third_section .abc .ic i {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  #Third_section .abc p {
+    padding: 0 25px;
+    color: #29415F;
+    font-size: 16px;
+  }
+  #Third_section .abc .test {
+    padding-left: 5px;
+  }
+  #Third_section .abc .test i {
+    margin-left: 10px;
+  }
+  #Third_section .abc .emr_title {
+    font-size: 20px;
+  }
+  #Third_section .custom_main_box {
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+  #Third_section .custom_main_box img {
+    margin-top: 0px;
+    width: 100px;
+    height: 100px;
+  }
+  #Third_section .custom_main_box p {
+    font-size: 17px;
+  }
+  #Four_section {
+    padding: 10px 0;
+  }
+  #Fifth_section .head_box img {
+    left: 41%;
+  }
+  #Fifth_section .business_card {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+  }
+  #Fifth_section .business_card i {
+    padding: 20px;
+    font-size: 16px;
+  }
+  #Fifth_section .business_card h5 {
+    font-size: 16px;
+  }
+  #Fifth_section .business_card p {
+    font-size: 14px;
+  }
+  #Six_section h2 {
+    font-size: 22px;
+  }
+  #Six_section .head_box img {
+    left: 42%;
+  }
+  #Six_section .our_instruction ul li p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  #Six_section .our_instruction .our_tips span i {
+    padding: 12px;
+    font-size: 20px;
+  }
+  #Six_section .our_instruction .our_tips p {
+    font-size: 14px;
+  }
+  #Seven_section {
+    padding: 50px 0;
+  }
+  #Seven_section .down {
+    margin-bottom: 0px;
+  }
+  #Seven_section .feed_back_text {
+    margin-top: 10px;
+  }
+  #Seven_section .feed_back_text h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #29415F;
+    font-family: 'Merriweather', serif;
+  }
+  #Seven_section .feed_back_text p {
+    text-align: justify;
+    font-size: 18px;
+    color: #29415F;
+  }
+  #Seven_section .mobile_box {
+    position: relative;
+    width: 96%;
+    height: 300px;
+    margin-left: 3%;
+    padding: 20px;
+  }
+  /*.................................................FOOTER...................................................*/
+  #footer_section {
+    text-align: center;
+  }
+  #footer_section ul {
+    display: none;
+  }
+  #footer_section .con h5 {
+    font-size: 18px;
+  }
+  #footer_section .con p {
+    font-size: 12px;
+  }
+  #footer_section .developer h4 {
+    font-size: 15px;
+  }
+  #footer_section .developer h5 {
+    font-size: 14px;
+  }
+  #footer_section .developer p {
+    font-size: 13px;
+  }
+  #footer_section .hide_contributor_for_lg {
+    display: block;
+  }
+  #footer_section .hide_contributor_for_sm {
+    display: none;
+  }
+  #Blood_bank_section .business_card span i {
+    font-size: 14px;
+  }
+  #Blood_bank_section .business_card h5 {
+    font-size: 16px;
+    margin-top: 21px;
+    margin-left: 40px;
+  }
+  #Blood_bank_section .business_card p {
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  #Blood_bank_section .business_card small {
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  #Fact_section .facts_card .hide_facts_icon {
+    display: none;
+  }
+  #Fact_section .facts_card h5 {
+    font-weight: bold;
+    color: #29415F;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  #Fact_section .facts_card p {
+    color: #29415F;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  #clickSection {
+    padding: 30px 0;
+  }
+  #clickSection span i {
+    font-size: 18px;
+    margin: 0 30px;
+  }
+  #clickSection p {
+    font-size: 18px;
+  }
+  #clickSection button {
+    padding: 2px 8px;
+    top: -30px;
+    right: 50px;
+    font-size: 14px;
+  }
+  #ResultSection {
+    padding: 5px 0;
+  }
+  #ResultSection .result_box {
+    padding-top: 10px;
+    width: 96%;
+    height: 165px;
+    margin-left: 2%;
+    margin-bottom: 25px;
+    border-top: 9px solid #B22626;
+  }
+  #ResultSection .result_box .picture_box {
+    margin-top: 0px;
+    width: 50px;
+    height: 50px;
+  }
+  #ResultSection .result_box .picture_box i {
+    font-size: 23px;
+  }
+  #ResultSection .result_box .info_box {
+    margin-top: 0px;
+    width: 75%;
+  }
+  #ResultSection .result_box .info_box h4 {
+    font-size: 16px;
+  }
+  #ResultSection .result_box .info_box h6 {
+    font-size: 11px;
+  }
+  #ResultSection .result_box .info_box h6 span {
+    font-size: 16px;
+  }
+  #ResultSection .result_box .info_box .hideData {
+    display: none;
+  }
+  #Profile_section img {
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    margin-left: -15%;
+  }
+  #Profile_section .profile_box {
+    height: 390px;
+  }
+  #Profile_section .profile_box button {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #Profile_section .profile_box a {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #Profile_section .profile_box p {
+    font-size: 16px;
+  }
+  #Profile_section .profile_box .hdst {
+    display: none;
+  }
+  #Change_password_section .update_box {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #Change_password_section .update_box form label {
+    font-weight: bold;
+    color: #29415F;
+  }
+  #Change_password_section .update_box form a {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 24%;
+  }
+  #Change_password_section .update_box form input[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  #Change_password_section .update_box form .frgtpass {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  #Login_section .login_box {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+  #Login_section .login_box .login_box_content {
+    position: relative;
+    width: 600px;
+    margin-top: 65px;
+    left: 15%;
+    padding: 0 0px;
+  }
+  #Login_section .login_box .login_box_content form input[type="submit"] {
+    margin-top: 10px;
+    padding: 2px 10px;
+  }
+  #registration_section {
+    padding: 10px 0;
+    margin-bottom: 50px;
+  }
+  #registration_section .shadow_box form .user_type_box {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+  }
+  #registration_section .shadow_box form .last_date_box {
+    margin-left: 0%;
+  }
+  #registration_section .shadow_box form #dateInput {
+    width: 50%;
+    margin-left: 10%;
+    -webkit-transition: .5;
+    transition: .5;
+    opacity: 0;
+  }
+  #registration_section .shadow_box form input[type="submit"],
+  #registration_section .shadow_box form input[type="reset"] {
+    border-radius: 30px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content {
+    margin-top: 20px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn {
+    font-size: 18px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn::after {
+    top: 12%;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form input[type="submit"] {
+    margin-left: 10%;
+  }
+  #Profile_section .shadow_box .last_date_box {
+    margin-left: 0%;
+  }
+  #Profile_section .shadow_box .last_date_box label {
+    font-size: 18px;
+  }
+  #Profile_section .shadow_box #dateInput {
+    width: 50%;
+    margin-left: 10%;
+  }
+  #Profile_section .shadow_box #date_format {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 22px;
+  }
+  .title i {
+    font-size: 32px;
+  }
+  .First_section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .First_section .logo_box {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 39%;
+    margin-bottom: 35px;
+  }
+  .First_section .logo_box img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+  }
+  .First_section .logo_box h4 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .First_section .contact_box {
+    width: 60%;
+    margin-left: 18%;
+    height: 80%;
+    margin-top: 8%;
+  }
+  .First_section .contact_box img {
+    width: 45px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  #Second_section {
+    background-position: center;
+  }
+  #Second_section .emmergency_search_box h2 {
+    font-size: 20px;
+  }
+  #Second_section .emmergency_search_box img {
+    width: 210%;
+  }
+  #Second_section .emmergency_search_box option {
+    font-size: 13px;
+  }
+  #Second_section .emmergency_search_box .emmergency_search_box_content .city_box label {
+    margin-left: 0px;
+  }
+  #Third_section {
+    padding: 50px 0;
+  }
+  #Third_section .abc {
+    height: 325px;
+    width: 90%;
+    margin-left: 5%;
+    background: url(../img/bg1.svg);
+    border-top-right-radius: 0px;
+    -webkit-box-shadow: 0 10px 25px #d6d1d1;
+            box-shadow: 0 10px 25px #d6d1d1;
+    border-bottom: 10px solid #29415F;
+  }
+  #Third_section .abc .ic i {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  #Third_section .abc .title {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  #Third_section .abc p {
+    padding: 0 20px;
+    color: #29415F;
+    font-size: 14px;
+  }
+  #Third_section .abc .test {
+    padding-left: 5px;
+  }
+  #Third_section .abc .emr_title {
+    font-size: 18px;
+  }
+  #Third_section .custom_main_box {
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+  #Third_section .custom_main_box p {
+    font-size: 16px;
+  }
+  #Four_section .blood_group_descrioption .blood_info h4 {
+    font-size: 25px;
+  }
+  #Four_section .blood_group_descrioption .blood_info p {
+    font-size: 15px;
+  }
+  #Fifth_section .head_box img {
+    left: 40%;
+  }
+  #Fifth_section .business_card {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 25px;
+  }
+  #Fifth_section .business_card i {
+    padding: 10px;
+    font-size: 16px;
+  }
+  #Fifth_section .business_card h5 {
+    font-size: 15px;
+  }
+  #Fifth_section .business_card p {
+    font-size: 13px;
+  }
+  #Six_section h2 {
+    font-size: 20px;
+  }
+  #Seven_section {
+    padding: 50px 0;
+  }
+  #Seven_section .down {
+    margin-bottom: 0px;
+  }
+  #Seven_section .feed_back_text {
+    margin-top: 5px;
+  }
+  #Seven_section .feed_back_text h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #29415F;
+    font-family: 'Merriweather', serif;
+  }
+  #Seven_section .feed_back_text p {
+    text-align: justify;
+    font-size: 17px;
+    color: #29415F;
+  }
+  #Seven_section .mobile_box {
+    position: relative;
+    width: 96%;
+    height: 300px;
+    margin-left: 3%;
+    padding: 20px;
+  }
+  #Blood_bank_section {
+    padding: 0px 0px;
+  }
+  #Blood_bank_section .business_card span i {
+    font-size: 10px;
+    padding: 10px;
+  }
+  #Blood_bank_section .business_card h5 {
+    font-size: 16px;
+    margin-top: 21px;
+    margin-left: 15px;
+  }
+  #Blood_bank_section .business_card p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  #Blood_bank_section .business_card small {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  #ResultSection {
+    padding: 5px 0;
+  }
+  #ResultSection .result_box {
+    padding-top: 10px;
+    width: 96%;
+    height: 165px;
+    margin-left: 2%;
+    margin-bottom: 25px;
+  }
+  #ResultSection .result_box .picture_box {
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  #ResultSection .result_box .picture_box i {
+    font-size: 16px;
+  }
+  #ResultSection .result_box .info_box {
+    margin-top: 0px;
+    width: 75%;
+  }
+  #ResultSection .result_box .info_box h4 {
+    font-size: 16px;
+  }
+  #ResultSection .result_box .info_box h6 {
+    font-size: 11px;
+  }
+  #ResultSection .result_box .info_box h6 span {
+    font-size: 14px;
+  }
+  #ResultSection .result_box .info_box .hideData {
+    display: none;
+  }
+  #Change_password_section .update_box {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #Change_password_section .update_box form a {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+  }
+  #Change_password_section .update_box form input[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 23%;
+  }
+  #Change_password_section .update_box form .frgtpass {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 23%;
+  }
+  #Login_section .login_box .login_box_content {
+    width: 500px;
+    margin-left: 2%;
+  }
+  #registration_section .shadow_box form #dateInput {
+    width: 70%;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content {
+    width: 90%;
+    left: 5%;
+    margin-top: 20px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn {
+    font-size: 15px;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form .warn::after {
+    top: 10%;
+  }
+  #Forgot_password_section .recovery_box .recovery_box_content form input[type="submit"] {
+    margin-left: 20%;
+  }
+  #Profile_section .shadow_box .last_date_box {
+    margin-left: 0%;
+  }
+  #Profile_section .shadow_box .last_date_box label {
+    font-size: 17px;
+  }
+  #Profile_section .shadow_box #dateInput {
+    width: 65%;
+    margin-left: 0%;
+  }
+  #Profile_section .shadow_box #date_format {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 20px;
+  }
+  .title i {
+    font-size: 28px;
+  }
+  #Second_section .emmergency_search_box option {
+    font-size: 11px;
+  }
+  #Third_section .abc {
+    height: 325px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  #Third_section .abc .ic i {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  #Third_section .abc .title {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  #Third_section .abc p {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  #Third_section .abc .emr_title {
+    font-size: 16px;
+  }
+  #Third_section .custom_main_box {
+    padding-bottom: 20px;
+  }
+  #Third_section .custom_main_box p {
+    font-size: 15px;
+  }
+  #Fifth_section .head_box img {
+    left: 38%;
+  }
+  #Fifth_section .business_card {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+  }
+  #Fifth_section .business_card i {
+    font-size: 16px;
+  }
+  #Fifth_section .business_card h5 {
+    font-size: 14px;
+  }
+  #Fifth_section .business_card p {
+    font-size: 12px;
+  }
+  #Profile_section img {
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: -18%;
+  }
+  #Profile_section .profile_box {
+    height: 360px;
+  }
+  #Profile_section .profile_box button {
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  #Profile_section .profile_box a {
+    margin-top: 5px;
+    margin-left: 1px;
+    font-size: 12px;
+  }
+  #Profile_section .profile_box p {
+    font-size: 12px;
+  }
+  #Profile_section .profile_box p span i {
+    padding: 0 5px;
+  }
+  #Profile_section .profile_box .hdst {
+    display: none;
+  }
+  #Change_password_section .update_box form a {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    margin-left: 23%;
+  }
+  #Change_password_section .update_box form input[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 20%;
+  }
+  #Change_password_section .update_box form .frgtpass {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+  }
+  #Login_section .login_box .login_box_content {
+    width: 450px;
+    margin-left: 0%;
+  }
+  #registration_section .shadow_box form .last_date_box {
+    margin-left: 0%;
+  }
+  #registration_section .shadow_box form .last_date_box label {
+    color: red;
+    font-size: 16px;
+  }
+  #registration_section .shadow_box form #dateInput {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
